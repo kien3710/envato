@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -22,10 +23,13 @@
           <div class="row align-items-center">
            
   </button>
-            <div class="col-lg-2 logo">
+            <div class="col-lg-2 col-md-2 logo">
               <img src="./image/Logo 1.png" alt="" />
             </div>
-            <div class="col-lg-10 "  >
+            <div class="col-lg-10 col-md-10 "  >
+              <div class="bars">
+                <img onclick="bars()" src="./image/bars-solid.svg" alt="">
+              </div>
               <ul class="menu-top">
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Giới thiệu</a></li>
@@ -70,6 +74,29 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="menu-mobile  ">
+        <div class="close"><img onclick="bars()" src="./image/xmark-solid.svg" alt=""></div>
+        <div class="menu-mobile-container">
+          <ul class="menu-mobile-list">
+            <li><a href="#">Trang chủ</a></li>
+            <hr>
+            <li><a href="#">Giới thiệu</a></li>
+            <hr>
+            <li><a href="#">Khóa học</a></li>
+            <hr>
+            <li><a href="#">Dịch lý</a></li>
+            <hr>
+            <li><a href="#">Phong thủy</a></li>
+            <hr>
+            <li><a href="#">Nhân tướng học</a></li>
+            <hr>
+            <li><a href="#">Tin tức</a></li>
+            <hr>
+            <li><a href="#">Liên hệ</a></li>
+            <hr>
+          </ul>
         </div>
       </div>
     </header>
@@ -151,10 +178,10 @@
               <h2>Khóa học nổi bật</h2>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card-services">
               <div class="card-img">
-                <img src="./image/Rectangle 1.png" alt="" />
+               <a href="#"> <img src="./image/Rectangle 1.png" alt="" /></a>
                 <div class="notifis">
                   <div class="notifi">
                     <img src="./image/megaphone.fill.png" alt="" />
@@ -165,7 +192,7 @@
               <div class="card-content">
                 <ul>
                   <li>
-                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                    <a href="#"><h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
                   </li>
 
                   <li>
@@ -190,16 +217,16 @@
                   </li>
                 </ul>
                 <div class="btn-services">
-                  <button>Đăng ký ngay</button>
-                  <button>Xem chi tiết</button>
+                  <a href="#">Đăng ký ngay</a>
+                  <a href="#">Xem chi tiết</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card-services">
               <div class="card-img">
-                <img src="./image/Rectangle 2.png" alt="" />
+              <a href="#">  <img src="./image/Rectangle 2.png" alt="" /></a>
                 <div class="notifis">
                   <div class="notifi">
                     <img src="./image/megaphone.fill.png" alt="" />
@@ -210,7 +237,53 @@
               <div class="card-content">
                 <ul>
                   <li>
-                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                   <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
+                  </li>
+                  <li>
+                    <p>
+                      Amet minim mollit non deserunt unllamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat
+                    </p>
+                  </li>
+                  <li>
+                    <div class="active">
+                      <img src="./image/video.square.fill.png" alt=""> <span>Zoom</span></div></li>
+                  <li>
+                    <div class="user">
+                      <img src="./image/person.fill.png" alt="" />
+                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="carlenda">
+                      <img src="./image/Calendar.png" alt="" />
+                      <span>Khai giảng:</span>
+                      <span>06/12/2022</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="btn-services">
+                <a href="#">Đăng ký ngay</a>
+                <a href="#">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card-services">
+              <div class="card-img">
+             <a href="#">   <img src="./image/Rectangle 3.png" alt="" /></a>
+                <div class="notifis">
+                  <div class="notifi">
+                    <img src="./image/megaphone.fill.png" alt="" />
+                    <span>Sắp khai giảng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>
+                  <a href="#">  <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
                   </li>
                   <li>
                     <p>
@@ -234,16 +307,16 @@
                   </li>
                 </ul>
                 <div class="btn-services">
-                  <button>Đăng ký ngay</button>
-                  <button>Xem chi tiết</button>
+                  <a href="#">Đăng ký ngay</a>
+                  <a href="#">Xem chi tiết</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card-services">
               <div class="card-img">
-                <img src="./image/Rectangle 3.png" alt="" />
+               <a href="#"> <img src="./image/Rectangle 4.png" alt="" /></a>
                 <div class="notifis">
                   <div class="notifi">
                     <img src="./image/megaphone.fill.png" alt="" />
@@ -254,51 +327,8 @@
               <div class="card-content">
                 <ul>
                   <li>
-                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
-                  </li>
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li><div class="active">Offline</div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
-                  <button>Đăng ký ngay</button>
-                  <button>Xem chi tiết</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card-services">
-              <div class="card-img">
-                <img src="./image/Rectangle 4.png" alt="" />
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                   
+                    <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
                   </li>
 
                   <li>
@@ -323,16 +353,16 @@
                   </li>
                 </ul>
                 <div class="btn-services">
-                  <button>Đăng ký ngay</button>
-                  <button>Xem chi tiết</button>
+                  <a href="#">Đăng ký ngay</a>
+                  <a href="#">Xem chi tiết</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card-services">
               <div class="card-img">
-                <img src="./image/Rectangle 5.png" alt="" />
+               <a href="#"> <img src="./image/Rectangle 5.png" alt="" /></a>
                 <div class="notifis">
                   <div class="notifi">
                     <img src="./image/megaphone.fill.png" alt="" />
@@ -343,7 +373,7 @@
               <div class="card-content">
                 <ul>
                   <li>
-                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                   <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
                   </li>
 
                   <li>
@@ -368,16 +398,16 @@
                   </li>
                 </ul>
                 <div class="btn-services">
-                  <button>Đăng ký ngay</button>
-                  <button>Xem chi tiết</button>
+                  <a href="#">Đăng ký ngay</a>
+                  <a href="#">Xem chi tiết</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card-services">
               <div class="card-img">
-                <img src="./image/Rectangle 6.png" alt="" />
+                <a href="#"><img src="./image/Rectangle 6.png" alt="" /></a>
                 <div class="notifis">
                   <div class="notifi">
                     <img src="./image/megaphone.fill.png" alt="" />
@@ -388,7 +418,7 @@
               <div class="card-content">
                 <ul>
                   <li>
-                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                   <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
                   </li>
 
                   <li>
@@ -413,8 +443,8 @@
                   </li>
                 </ul>
                 <div class="btn-services">
-                  <button>Đăng ký ngay</button>
-                  <button>Xem chi tiết</button>
+                  <a href="#">Đăng ký ngay</a>
+                  <a href="#">Xem chi tiết</a>
                 </div>
               </div>
             </div>
@@ -433,45 +463,45 @@
               <h2>Theo dõi chúng tôi trên</h2>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
-              <img class="img-1" src="./image/image 1.png" alt="" />
-            </div>
+          <div class="col-lg-3 col-md-4">
+          <a href="#">  <div class="social">
+            <img class="img-1" src="./image/image 1.png" alt="" />
+          </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
-              <img class="img-2" src="./image/image 2.png" alt="" />
-            </div>
+          <div class="col-lg-3 col-md-4">
+           <a href="#"> <div class="social">
+            <img class="img-2" src="./image/image 2.png" alt="" />
+          </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
-              <img class="img-3" src="./image/image 6.png" alt="" />
-            </div>
+          <div class="col-lg-3 col-md-4">
+           <a href="#"> <div class="social">
+            <img class="img-3" src="./image/image 6.png" alt="" />
+          </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
-              <img class="img-4" src="./image/image 7.png" alt="" />
-            </div>
+          <div class="col-lg-3 col-md-4">
+           <a href="#"> <div class="social">
+            <img class="img-4" src="./image/image 7.png" alt="" />
+          </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
+          <div class="col-lg-3 col-md-4">
+            <a href="#"><div class="social">
               <img class="img-5" src="./image/image 3.png" alt="" />
-            </div>
+            </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
+          <div class="col-lg-3 col-md-4">
+            <a href="#"><div class="social">
               <img class="img-6" src="./image/image 5.png" alt="" />
-            </div>
+            </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
-              <img class="img-7" src="./image/image 8.png" alt="" />
-            </div>
+          <div class="col-lg-3 col-md-4">
+          <a href="#">  <div class="social">
+            <img class="img-7" src="./image/image 8.png" alt="" />
+          </div></a>
           </div>
-          <div class="col-lg-3">
-            <div class="social">
+          <div class="col-lg-3 col-md-4">
+           <a href="#" id=""> <div class="social">
               <img class="img-8" src="./image/image 9.png" alt="" />
-            </div>
+            </div></a>
           </div>
         </div>
       </div>
@@ -557,109 +587,71 @@
       <h2 class="title">Tin tức</h2>
       </div>
       <div class="col-lg-12">
-        <div class="swiper mySwiper mySwipers">
+        <div class="swiper swiper-new  mySwipers">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"> <div class="new">
-              <img src="./image/slide1.png" alt="">
+            <div class="swiper-slide swiper-slide-new"> <div class="new">
+             <a href="#"> <img src="./image/slide1.png" alt=""></a>
               <div class="date">
                 <img src="./image/Calendar.png" alt="">
                 <p>Thứ Năm, 16/02/2021</p>
                
               </div>
-              <h4>Nghệ thuật thấu hiểu & sắp xếp bàn cờ nhân sự</h4>
+              <a href="#"><h4>Nghệ thuật thấu hiểu & sắp xếp bàn cờ nhân sự</h4></a>
               
             </div>
           </div>
-            <div class="swiper-slide"> <div class="new">
-              <img src="./image/slide2.png" alt="">
+            <div class="swiper-slide swiper-slide-new"> <div class="new">
+              <a href="#"><img src="./image/slide2.png" alt=""></a>
               <div class="date">
                 <img src="./image/Calendar.png" alt="">
                 <p>Thứ Hai, 13/02/2021</p>
                
               </div>
-              <h4>Bàn về thói quen đọc sách</h4>
+              <a href="" id=""><h4>Bàn về thói quen đọc sách</h4></a>
               
             </div>
           </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-new">
               <div class="new">
-                <img src="./image/slide3.png" alt="">
+                <a href="#"><img src="./image/slide3.png" alt=""></a>
                 <div class="date">
                   <img src="./image/Calendar.png" alt="">
                   <p>Thứ Sáu, 17/02/2021</p>
                  
                 </div>
-                <h4>Đánh thức bản thể phi thường</h4>
+               <a href="# "> <h4>Đánh thức bản thể phi thường</h4></a>
                 
               </div>
             </div>
-            <div class="swiper-slide"><div class="new">
-              <img src="./image/slide4.png" alt="">
+            <div class="swiper-slide swiper-slide-new"><div class="new">
+              <a href="#"><img src="./image/slide4.png" alt=""></a>
               <div class="date">
                 <img src="./image/Calendar.png" alt="">
                 <p>Thứ Ba, 21/02/2021</p>
                
               </div>
-              <h4>Kinh dịch - đảo của người quân tử</h4>
+           <a href="#">   <h4>Kinh dịch - đảo của người quân tử</h4></a>
               
             </div></div>
-           
+             <div class="swiper-slide swiper-slide-new"><div class="new">
+              <a href="#"><img src="./image/slide4.png" alt=""></a>
+              <div class="date">
+                <img src="./image/Calendar.png" alt="">
+                <p>Thứ Ba, 21/02/2021</p>
+               
+              </div>
+           <a href="#">   <h4>Kinh dịch - đảo của người quân tử</h4></a>
+              
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <!-- <div class="swiper mySwipers">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="new">
-              <img src="./image/slide1.png" alt="">
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Năm, 16/02/2021</p>
-               
-              </div>
-              <h4>Nghệ thuật thấu hiểu & sắp xếp bàn cờ nhân sự</h4>
-              
             </div>
-             </div>
-            <div class="swiper-slide"> <div class="new">
-              <img src="./image/slide2.png" alt="">
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Hai, 13/02/2021</p>
-               
-              </div>
-              <h4>Bàn về thói quen đọc sách</h4>
-              
-            </div></div>
-            <div class="swiper-slide"> <div class="new">
-              <img src="./image/slide3.png" alt="">
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Sáu, 17/02/2021</p>
-               
-              </div>
-              <h4>Đánh thức bản thể phi thường</h4>
-              
-            </div></div>
-            <div class="swiper-slide"> <div class="new">
-              <img src="./image/slide4.png" alt="">
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Ba, 21/02/2021</p>
-               
-              </div>
-              <h4>Kinh dịch - đảo của người quân tử</h4>
-              
-            </div></div>
           
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination">s</div>
-        </div> -->
+          <div class="swiper-pagination swiper-pagination-new"></div>
+        </div>
+
+      
       </div>
     </div>
   </div>
@@ -672,7 +664,7 @@
             <ul class="left">
               <li>
                 <div class="logo-footer">
-                  <img src="./image/Logo 1.png" alt="" />
+                  <a href="#"><img src="./image/Logo 1.png" alt="" /></a>
                 </div>
               </li class="content">
               <p>
@@ -680,9 +672,9 @@
                 ý nghĩa .Đào tạo nguồn nhân lực...
               </p>
               <li class="contact">  <img src="./image/telephone 1.png" alt="" />
-                <p><b>Hotline: </b> 01233456789</p></li>
+                <p><b>Hotline: </b> <a href="#">01233456789</a></p></li>
                 <li class="contact"><img src="./image/mail 1.png" alt="" />
-                  <p><b>Email: </b> Education@gmail.com</p></li>
+                  <p><b>Email: </b> <a href="#">Education@gmail.com</a></p></li>
             </ul>
             
           </div>
@@ -694,9 +686,9 @@
                 <p>Giới thiệu</p>
                 <ul >
                  
-                 <li>Lorem ipsum is simply</li>
-                 <li>Lorem ipsum is simply</li>
-                 <li>Lorem ipsum is simply</li>
+                 <li><a href="#">Lorem ipsum is simply</a></li>
+                 <li><a href="#">Lorem ipsum is simply</a></li>
+                 <li><a href="#">Lorem ipsum is simply</a></li>
                   </ul>
                </div>
               </div>
@@ -706,9 +698,9 @@
                  <p>Chia sẻ nhanh</p>
                  <ul >
                   
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
                    </ul>
                 </div>
                </div>   <div class="col-lg-4">
@@ -717,9 +709,9 @@
                  <p>Hỗ trợ</p>
                  <ul >
                   
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
                    </ul>
                 </div>
                </div>   <div class="col-lg-4">
@@ -728,9 +720,9 @@
                  <p>Triết lý & sứ mệnh</p>
                  <ul >
                   
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
                    </ul>
                 </div>
                </div>   <div class="col-lg-4">
@@ -739,9 +731,9 @@
                  <p>Thông tin hữu ích </p>
                  <ul >
                   
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
-                  <li>Lorem ipsum is simply</li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
                    </ul>
                 </div>
                </div>   <div class="col-lg-4">
@@ -749,7 +741,7 @@
                  <p>Theo dõi tôi trên</p>
                  <ul class="footer-icon" >
                   
-                  <li><a href="#3"><img src="./image/Vector Smart Object143-01.png" alt=""></a></li>
+                  <li><a href="#"><img src="./image/Vector Smart Object143-01.png" alt=""></a></li>
                   <li><a href="#"><img src="./image/Vector Smart Object15UY-01.png" alt=""></a></li>
                   <li><a href="#"><img src="./image/Vector Smart Object1TREY-01.png" alt=""></a></li>
                   <li><a href="#"><img src="./image/Vector Smart Object1TREY-01 (1).png" alt=""></a></li>

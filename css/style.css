@@ -77,10 +77,51 @@ header {
   width: 58px;
   height: 64px;
 }
-
+/* nav-top hidden */
+.menu-mobile {
+  background-color: #d9f1e2;
+  position: fixed;
+  top: 5px;
+  bottom: 0;
+  right: 0;
+  min-width: 230px;
+  max-width: 300px;
+  z-index: 999999;
+  transition: 0.5s;
+  transform: translateX(100%);
+  padding: 20px;
+}
+.menu-mobile .close {
+  width: 100%;
+}
+.menu-mobile .close img {
+  width: 30px;
+  transition: 0.5s;
+}
+.menu-mobile .close img:hover {
+  transform: rotate(45deg);
+}
+.menu-mobile .menu-mobile-container li {
+  list-style: none;
+}
+.menu-mobile .menu-mobile-container li a {
+  text-decoration: none;
+}
+.actives {
+  transform: translateX(0);
+}
+.header .bars {
+  display: none;
+  text-align: end;
+}
+.header .bars img {
+  width: 30px;
+}
+/* banner header */
 .banner .content {
   font-family: "SanFranciscoDisplay";
   margin-top: 50px;
+  margin-left: 20px;
 }
 .banner .title {
   margin: 25px 0;
@@ -101,6 +142,10 @@ header {
   color: white;
   border: none;
 }
+.banner .btns:hover {
+  background-color: #266816;
+}
+
 .banner .ceo img {
   width: 438px;
   max-width: 100%;
@@ -115,6 +160,7 @@ header {
 }
 .about .phil li .pen {
   display: flex;
+  margin-left: -20px;
 }
 .about .title li {
   margin-bottom: 3px;
@@ -127,7 +173,7 @@ header {
   max-width: 100%;
 }
 .about .phil li:nth-child(2n + 1) {
-  margin: 15px 0;
+  margin: 10px 0;
   list-style: none;
   font-size: 28px;
 }
@@ -137,6 +183,7 @@ header {
 .about .content h2 {
   font-family: "SanFranciscoDisplayBold";
   font-size: 64px;
+  margin-left: 20px;
 }
 
 .about .title a {
@@ -144,14 +191,20 @@ header {
   color: white;
   text-decoration: none;
   font-family: "Baloo";
-
+  margin-left: 20px;
   background-color: var(--green-main);
   margin-bottom: 5px;
+}
+.about .title .btns:hover {
+  background-color: #085805;
 }
 .about .title {
   font-family: "SanFranciscoDisplay";
   font-size: 20px;
-  margin: 25px 0;
+  margin: 50px 0;
+}
+.about .title ul {
+  margin-bottom: 30px;
 }
 .about .phil {
   font-family: "SanFranciscoDisplay";
@@ -192,7 +245,6 @@ header {
 .services .card-services {
   width: 365px;
   height: 620px;
-  border: 0.5px solid rgb(172, 172, 172);
 }
 .services .title h2 {
   font-size: 64px;
@@ -240,8 +292,15 @@ header {
   font-family: "SanFranciscoDisplay";
   font-size: 20px;
 }
-.services .card-content ul li .title {
+.services .card-content ul li a {
+  text-decoration: none;
+  color: #0b2537;
+}
+.services .card-content ul li a .title {
   font-family: "Baloo";
+}
+.services .card-content ul li a .title:hover {
+  color: #085805;
 }
 .services .card-content .user {
   display: flex;
@@ -279,28 +338,47 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.services .card-content .btn-services button {
+.services .card-content .btn-services a {
   padding: 7px 30px;
   color: white;
   font-weight: bold;
   border: none;
   background-color: var(--green-main);
   font-family: "SanFranciscoDisplay";
+  text-decoration: none;
 }
+.services .card-content .btn-services a:hover {
+  background-color: #085805;
+}
+
 .services .card-content .active {
   background-color: #d9f1e2;
   border-radius: 30px;
+  display: flex;
   display: inline;
   padding: 5px 15px;
 
   color: #0e963f;
 }
-.services .card-content .btn-services button:nth-child(2) {
+
+.services .card-content .active img {
+  width: 17px;
+  height: 17px;
+}
+.services .card-content .active span {
+  color: #d93434;
+}
+.services .card-content .btn-services a:nth-child(2):hover {
+  background-color: #085805;
+  color: white;
+}
+.services .card-content .btn-services a:nth-child(2) {
   padding: 7px 25px;
   color: var(--green-main);
   font-weight: bold;
   border: none;
   background-color: white;
+  text-decoration: none;
   border: 1px solid var(--green-main);
 }
 /* section socials */
@@ -323,6 +401,11 @@ header {
   box-shadow: 10px 10px 8px -9px rgba(87, 87, 87, 0.75);
   -webkit-box-shadow: 10px 10px 8px -9px rgba(87, 87, 87, 0.75);
   -moz-box-shadow: 10px 10px 8px -9px rgba(87, 87, 87, 0.75);
+}
+.socials .social:hover {
+  box-shadow: -1px -1px 16px 11px rgba(201, 201, 201, 0.75);
+  -webkit-box-shadow: -1px -1px 16px 11px rgba(201, 201, 201, 0.75);
+  -moz-box-shadow: -1px -1px 16px 11px rgba(201, 201, 201, 0.75);
 }
 .socials .title h2 {
   font-size: 64px;
@@ -406,7 +489,7 @@ header {
   object-fit: cover;
 }
 .share .swiper .swiper-wrapper .swiper-slide {
-  height: 300px;
+  height: auto;
 }
 
 .share .swiper-pagination .swiper-pagination-bullet {
@@ -418,7 +501,7 @@ header {
 .share .member {
   display: flex;
   flex-direction: column;
-  margin: 10px 20px;
+  margin: 30px;
 }
 .share .member-top {
   display: flex;
@@ -457,14 +540,22 @@ header {
 .news .title {
   text-align: center;
   font-size: 64px;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   font-family: "SanFranciscoDisplayBold";
+}
+.news .new a {
+  text-decoration: none;
+  color: #0b2537;
 }
 .news .new h4 {
   text-align: start;
   font-size: 22px;
   font-weight: bold;
   font-family: "Baloo";
+}
+.news .new img {
+  width: 255px;
+  height: 170px;
 }
 .news .new .date {
   margin: 5px 0;
@@ -480,40 +571,25 @@ header {
   height: 17px;
 }
 
-.news .swiper {
+.news .swiper-new {
   width: 100%;
   height: 100%;
 }
 
-.news .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-
+.news .swiper-slide-new {
   height: 400px;
   width: 300px;
 
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
-.news .swiper-slide img {
+.news .swiper-slide-new img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.news .swiper-pagination-bullet {
+.news .swiper-pagination-new span {
   padding: 7px;
   background-color: #0e963f;
 }
@@ -540,8 +616,22 @@ header {
   width: 24px;
   margin-right: 10px;
 }
+.footer .left .contact p a {
+  text-decoration: none;
+  color: #a1b2c6;
+}
+.footer .left .contact p a:hover {
+  color: #6d747c;
+}
 .footer .col-lg-8 {
   margin: 50px 0;
+}
+.footer .right li a {
+  text-decoration: none;
+  color: #a1b2c6;
+}
+.footer .right li a:hover {
+  color: #6d747c;
 }
 .footer .right li {
   margin-bottom: 5px;
@@ -555,15 +645,23 @@ header {
 .footer .right .footer-icon {
   display: flex;
   padding: 0;
+  margin-left: 20px;
 }
 .footer .right .footer-icon li {
   list-style: none;
-  margin-right: 3px;
+
+  width: 45px;
+  height: 41px;
 }
 .footer .right .footer-icon li a img {
-  margin-left: 15px;
   width: 35px;
   height: 36px;
+  transition: 0.5s;
+}
+
+.footer .right .footer-icon li a img:hover {
+  width: 40px;
+  height: 41px;
 }
 .footer .col-lg-12 {
   text-align: center;
@@ -571,8 +669,30 @@ header {
 .footer .col-lg-12 p {
   font-size: 14px;
 }
-@media screen and (min-width: 768px) and (max-width: 1028px) {
-  body {
-    background-color: red;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header .menu-top {
+    display: none;
+  }
+  .header .bars {
+    display: block;
+  }
+
+  .menu-mobile .menu-mobile-list li a {
+    font-family: "SanFranciscoDisplay";
+    color: #2d2d2d;
+  }
+  .banner .ceo {
+    display: flex;
+    justify-content: center;
+  }
+  .services .card-services {
+    width: 345px;
+    padding: 0 5px;
+  }
+  .socials .social {
+    width: 220px;
+  }
+  .share .swiper {
+    margin-bottom: 10px;
   }
 }

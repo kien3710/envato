@@ -1,3 +1,5 @@
+// swipper
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
 
@@ -8,14 +10,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swipers = new Swiper(".mySwipers", {
+var kien = new Swiper(".swiper-new", {
   slidesPerView: 4,
   spaceBetween: 30,
-  slidesPerGroup: 4,
+
   loop: true,
-  loopFillGroupWithBlank: true,
+
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-new",
     clickable: true,
   },
   navigation: {
@@ -23,3 +25,8 @@ var swipers = new Swiper(".mySwipers", {
     prevEl: ".swiper-button-prev",
   },
 });
+// nav-mobile
+function bars() {
+  var nav = document.querySelector(".menu-mobile");
+  nav.classList.toggle("actives");
+}
