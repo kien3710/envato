@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: Baloo;
-  src: url(/font/baloo/BalooBhaina2-Bold.ttf);
+  src: url(../font/baloo/BalooBhaina2-Bold.ttf);
 }
 @font-face {
   font-family: SanFranciscoDisplay;
-  src: url(/font/SF-UI/SF-UI-Display-Regular.otf);
+  src: url(../font/SF-UI/SF-UI-Display-Regular.otf);
 }
 @font-face {
   font-family: SanFranciscoDisplayBold;
-  src: url(/font/SF-UI/SF-UI-Display-Bold.otf);
+  src: url(../font/SF-UI/SF-UI-Display-Bold.otf);
 }
 /* section header */
 header {
-  background-image: url("/image/background-banner.png");
+  background-image: url("../image/background-banner.png");
 
   background-size: cover;
 
@@ -92,12 +92,14 @@ header {
   font-family: "SanFranciscoDisplayBold";
   font-size: 64px;
 }
-.banner button {
+.banner .btns {
+  font-size: 20px;
+  font-family: "Baloo";
+  text-decoration: none;
   background-color: #0e963f;
-  padding: 10px 25px;
+  padding: 5px 25px;
   color: white;
   border: none;
-  font-weight: bold;
 }
 .banner .ceo img {
   width: 438px;
@@ -107,7 +109,7 @@ header {
 /* section about */
 
 .about {
-  background-image: url("/image/001\ 1.png");
+  background-image: url("../image/about.png");
   background-size: cover;
   overflow: hidden;
 }
@@ -137,22 +139,27 @@ header {
   font-size: 64px;
 }
 
-.about .title button {
-  padding: 7px 25px;
+.about .title a {
+  padding: 5px 25px;
   color: white;
-  font-weight: bold;
-  border: none;
+  text-decoration: none;
+  font-family: "Baloo";
+
   background-color: var(--green-main);
+  margin-bottom: 5px;
 }
 .about .title {
   font-family: "SanFranciscoDisplay";
   font-size: 20px;
+  margin: 25px 0;
 }
 .about .phil {
   font-family: "SanFranciscoDisplay";
   font-size: 17px;
 }
-
+.about .phil .pen h4 {
+  font-family: "Baloo";
+}
 .about .about-left img {
   width: 779px;
 }
@@ -160,14 +167,14 @@ header {
 
 .services {
   width: 100%;
-  background-image: url("/image/Layer\ 41.png");
+  background-image: url("../image/Layer\ 41.png");
   background-size: cover;
   background-position: bottom;
   position: relative;
 }
 .services::before {
   content: "";
-  background-image: url("/image/Layer\ 42.png");
+  background-image: url("../image/Layer\ 42.png");
   width: 1920px;
 
   height: 1511px;
@@ -298,7 +305,7 @@ header {
 }
 /* section socials */
 .socials {
-  background-image: url("/image/170325e901312893babed9285f8a7c01\ 1.png");
+  background-image: url("../image/170325e901312893babed9285f8a7c01\ 1.png");
   background-size: cover;
   min-height: 600px;
   display: flex;
@@ -357,7 +364,7 @@ header {
   width: 100%;
 
   min-height: 600px;
-  background-image: url("/image/123-01\ 1.png");
+  background-image: url("../image/123-01\ 1.png");
   background-size: cover;
   background-position: center;
 }
@@ -563,4 +570,9 @@ header {
 }
 .footer .col-lg-12 p {
   font-size: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  body {
+    background-color: red;
+  }
 }
