@@ -237,8 +237,9 @@ header {
 }
 .services .card-services {
     width: 100%;
-
-    border: 0.5px solid #848490;
+    background-color: white;
+    filter: drop-shadow(0px 0px 4px rgba(0 0 0 /20%));
+    padding-bottom: 10px;
 }
 .services .title-service {
     margin: 80px 0 45px 0;
@@ -249,12 +250,50 @@ header {
     font-family: 'Baloo';
 }
 
-.card-services {
-    background-color: white;
-}
+
 .card-services .card-img {
     position: relative;
 }
+.card-services .card-img .boxImg {
+  
+  width: 363px;
+  height: 231px;
+  background-color: red;
+}
+
+/* img services */
+.card-services .card-img .img-1 {
+  background-image: url("/image/Rectangle1.png");
+  background-size: cover;
+  max-width: 100%;
+  background-position: center;
+}
+.card-services .card-img .img-2 {
+  background-image: url("/image/Rectangle2.png");
+  background-size: cover;
+  max-width: 100%;
+}
+.card-services .card-img .img-3 {
+  background-image: url("/image/Rectangle3.png");
+  background-size: cover;
+  max-width: 100%;
+}
+.card-services .card-img .img-4 {
+  background-image: url("/image/Rectangle4.png");
+  background-size: cover;
+  max-width: 100%;
+}
+.card-services .card-img .img-5 {
+  background-image: url("/image/Rectangle5.png");
+  background-size: cover;
+  max-width: 100%;
+}
+.card-services .card-img .img-6 {
+  background-image: url("/image/Rectangle6.png");
+  background-size: cover;
+  max-width: 100%;
+}
+
 .card-services .card-img .notifis {
     position: absolute;
     bottom: 0;
@@ -380,9 +419,67 @@ header {
     display: flex;
     align-items: center;
 }
+.socials .social .boxImg-social {
+  width: 245px;
+  height: 95px;
+}
+ /* social img */
+ .socials .social .social-img-1 {
+  background-image: url("/image/youtube.png");
+  background-size: auto 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-2 {
+  background-image: url("/image/tiktok.png");
+  background-size: auto 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-3 {
+  background-image: url("/image/podcadsts.png");
+  background-size: auto 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-4 {
+  background-image: url("/image/spotify.png");
+  background-size: auto 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-5 {
+  background-image: url("/image/facebook.png");
+  background-size: auto 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-6 {
+  background-image: url("/image/zalo.png");
+  background-size: auto 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-7 {
+  background-image: url("/image/apple-podcasts.png");
+  background-size: auto 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .socials .social .social-img-8 {
+  background-image: url("/image/insta.png");
+  background-size: auto 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+
+
+
+
+
+
 .socials .social {
-    width: 248px;
-    height: 95px;
     background-color: #ffffff;
     margin: 10px 0;
     display: flex;
@@ -495,7 +592,8 @@ header {
 }
 .share .member-top img {
     width: 80px;
-    height: 83px;
+    height: 80px;
+    border-radius: 100%;
 }
 .share .member-top .name p {
     margin-left: 20px;
@@ -534,6 +632,37 @@ header {
     margin: 80px 0 40px 0;
     font-family: 'Baloo';
 }
+.news .new .boxImg-new {
+  width: 262.5px;
+  height: 174.69px;
+  background-color: red;
+}
+/* new image */
+.news .new .new-1 {
+  background-image: url("/image/slide1.png");
+  background-position: center;
+  background-size: cover;
+}
+.news .new .new-2 {
+  background-image: url("/image/slide2.png");
+  background-position: center;
+  background-size: cover;
+}
+.news .new .new-3 {
+  background-image: url("/image/slide3.png");
+  background-position: center;
+  background-size: cover;
+}
+.news .new .new-4 {
+  background-image: url("/image/slide4.png");
+  background-position: center;
+  background-size: cover;
+}
+.news .new .new-5 {
+  background-image: url("/image/Rectangle4.png");
+  background-position: center;
+  background-size: cover;
+}
 .news .new a {
     color: #0b2537;
 }
@@ -567,7 +696,7 @@ header {
     z-index: 100000;
     position: absolute;
     top: 45%;
-    right: 350px;
+    right: -40px;
     cursor: pointer;
 }
 .news .swiper-new {
@@ -579,7 +708,7 @@ header {
     z-index: 100000;
     position: absolute;
     top: 45%;
-    left: 350px;
+    left: -40px;
     cursor: pointer;
 }
 .news .swiper-button img {
@@ -619,15 +748,20 @@ header {
 }
 .footer .left {
     margin: 50px 0 0 0;
+    padding: 0;
 }
 .footer .left li {
     list-style: none;
     display: flex;
+
 }
 .footer .left .contact img {
     height: 24px;
     width: 24px;
     margin-right: 10px;
+}
+.footer .left .footer-title {
+  margin: 1rem 0;
 }
 .footer .left .contact p a {
     color: #a1b2c6;

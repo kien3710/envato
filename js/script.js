@@ -2,7 +2,9 @@
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-
+  autoplay: {
+    delay: 3000,
+  },
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -10,10 +12,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var kien = new Swiper(".swiper-new", {
+var swiperNew = new Swiper(".swiper-new", {
   slidesPerView: 4,
   spaceBetween: 20,
-
   loop: true,
 
   pagination: {
@@ -23,6 +24,9 @@ var kien = new Swiper(".swiper-new", {
   navigation: {
     nextEl: ".swiper-button",
     prevEl: ".swiper-button-prv",
+  },
+  autoplay: {
+    delay: 2000,
   },
 });
 // nav-mobile
