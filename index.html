@@ -1,770 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <div class="header">
-        
-        <div class="container">
-          <div class="row align-items-center">
-           
-  </button>
-            <div class="col-lg-2 col-md-2 logo">
-              <img src="./image/Logo 1.png" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="header">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          </button>
+          <div class="col-lg-2 col-md-2 logo">
+            <img src="./image/Logo 1.png" alt="" />
+          </div>
+          <div class="col-lg-10 col-md-10 ">
+            <div class="bars">
+              <img onclick="bars()" src="./image/bars-solid.svg" alt="">
             </div>
-            <div class="col-lg-10 col-md-10 "  >
-              <div class="bars">
-                <img onclick="bars()" src="./image/bars-solid.svg" alt="">
-              </div>
-              <ul class="menu-top">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Khóa học</a></li>
-                <li><a href="#">Dịch lý</a></li>
-                <li><a href="#">Phong thủy</a></li>
-                <li><a href="#">Nhân tướng học</a></li>
-                <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Liên hệ</a></li>
+            <ul class="menu-top">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Khóa học</a></li>
+              <li><a href="#">Dịch lý</a></li>
+              <li><a href="#">Phong thủy</a></li>
+              <li><a href="#">Nhân tướng học</a></li>
+              <li><a href="#">Tin tức</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="content">
+              <h1>LÊ HÀ</h1>
+              <ul class="title">
+                <li>
+                  Amet minim mollit non deserunt unllamco est sit aliqua dolor
+                  do amet sint
+                </li>
+                <li>
+                  Velit officia consequat duis enim velit mollit .
+                  Exercitation veniam consequat sunt nostrud amet
+                </li>
+                <li>
+                  Velit officia consequat duis enim velit mollit. Exercitation
+                  veniam
+                </li>
               </ul>
+              <a class="btns" href="#">Khóa học của tôi</a>
             </div>
           </div>
-          <hr />
-        </div>
-      </div>
-      <div class="banner">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <div class="content">
-                <h1>LÊ HÀ</h1>
-                <ul class="title">
-                  <li>
-                    Amet minim mollit non deserunt unllamco est sit aliqua dolor
-                    do amet sint
-                  </li>
-                  <li>
-                    Velit officia consequat duis enim velit mollit .
-                    Exercitation veniam consequat sunt nostrud amet
-                  </li>
-                  <li>
-                    Velit officia consequat duis enim velit mollit. Exercitation
-                    veniam
-                  </li>
-                </ul>
-               <a class="btns" href="#">Khóa học của tôi</a>
-              </div>
-            </div>
-            <div class="col-lg-4 align-self-end">
-              <div class="ceo">
-                <img src="./image/ceo_thumb 1.png" alt="" />
-              </div>
+          <div class="col-lg-4 align-self-end">
+            <div class="ceo">
+              <img src="./image/ceo_thumb 1.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="menu-mobile  ">
-        <div class="close"><img onclick="bars()" src="./image/xmark-solid.svg" alt=""></div>
-        <div class="menu-mobile-container">
-          <ul class="menu-mobile-list">
-            <li><a href="#">Trang chủ</a></li>
-            <hr>
-            <li><a href="#">Giới thiệu</a></li>
-            <hr>
-            <li><a href="#">Khóa học</a></li>
-            <hr>
-            <li><a href="#">Dịch lý</a></li>
-            <hr>
-            <li><a href="#">Phong thủy</a></li>
-            <hr>
-            <li><a href="#">Nhân tướng học</a></li>
-            <hr>
-            <li><a href="#">Tin tức</a></li>
-            <hr>
-            <li><a href="#">Liên hệ</a></li>
-            <hr>
+    </div>
+    <div class="menu-mobile  ">
+      <div class="close"><img onclick="bars()" src="./image/xmark-solid.svg" alt=""></div>
+      <div class="menu-mobile-container">
+        <ul class="menu-mobile-list">
+          <li><a href="#">Trang chủ</a></li>
+          <hr>
+          <li><a href="#">Giới thiệu</a></li>
+          <hr>
+          <li><a href="#">Khóa học</a></li>
+          <hr>
+          <li><a href="#">Dịch lý</a></li>
+          <hr>
+          <li><a href="#">Phong thủy</a></li>
+          <hr>
+          <li><a href="#">Nhân tướng học</a></li>
+          <hr>
+          <li><a href="#">Tin tức</a></li>
+          <hr>
+          <li><a href="#">Liên hệ</a></li>
+          <hr>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- section about -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 ">
+          <div class="content">
+            <h2>Về chúng tôi</h2>
+          </div>
+          <div class="title">
+            <ul>
+              <li>
+                Nơi lan tỏa những khóa học và ấn phẩm giúp bạn
+                <b>Sống lâu và có ý nghĩa</b>
+              </li>
+              <li>Đào tạo nguồn nhân lực theo <b>4 vòng tròn đào tạo</b></li>
+              <li>
+                Định hướng phát triển
+                <b>Đại học 3 Gốc và Mạng xã hội Học tập</b>
+                suốt đời
+              </li>
+              <li>
+                Phát triển các dự án xoay quanh trục chính:
+                <b>Cộng đồng sống Tử Tế</b>
+              </li>
+            </ul>
+
+          </div>
+          <div class="btn">
+            <a class="btns" href="#">Xem chi tiết</a>
+          </div>
+          <ul class="phil">
+            <li>
+              <div class="pen">
+                <img src="./image/pen.png" alt="" />
+                <h4>Triết lý</h4>
+              </div>
+            </li>
+            <li>
+              <span> 3 gốc rễ: <b> Đạo đức - Trí tuệ - Nghị lực</b> dựa trên nền tảng
+                <b>Giới Định Tuệ</b></span>
+            </li>
+            <li>
+              <div class="pen">
+                <img src="./image/pen.png" alt="" />
+                <h4>Tầm nhìn</h4>
+              </div>
+            </li>
+            <li>
+              <span>Trở thành Hệ sịnh thía giáo dục Xanh, truyền tải Đạo đức và kỹ
+                năng tới mọi miền trên Việt Nam</span>
+            </li>
+            <li>
+              <div class="pen">
+                <img src="./image/pen.png" alt="" />
+                <h4>Sứ mệnh</h4>
+              </div>
+            </li>
+            <li>
+              <span> Nhân bản hệ giá trị 3 Gốc Rễ:
+                <b> Đạo Đức - Trí Tuệ - Nghị lực</b> đi khắp mọi miền đất nước
+                và lan rộng hơn nữa...</span>
+            </li>
           </ul>
         </div>
+        <div class="col-lg-5">
+          <div class="about-left">
+            <img src="./image/Group 8212.png" alt="" />
+          </div>
+        </div>
       </div>
-    </header>
-    <!-- section about -->
-    <section class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="content">
-              <h2>Về chúng tôi</h2>
+    </div>
+  </section>
+  <!-- section  services-->
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="title-service">
+            <h2>Khóa học nổi bật</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ser">
+          <div class="card-services">
+            <div class="card-img">
+              <a href="#"> <img src="./image/Rectangle 1.png" alt="" /></a>
+              <div class="notifis">
+                <div class="notifi">
+                  <img src="./image/megaphone.fill.png" alt="" />
+                  <span>Sắp khai giảng</span>
+                </div>
+              </div>
             </div>
-            <div class="title">
+            <div class="card-content">
               <ul>
                 <li>
-                  Nơi lan tỏa những khóa học và ấn phẩm giúp bạn
-                  <b>Sống lâu và có ý nghĩa</b>
+                  <a href="#">
+                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                  </a>
                 </li>
-                <li>Đào tạo nguồn nhân lực theo <b>4 vòng tròn đào tạo</b></li>
+
                 <li>
-                  Định hướng phát triển
-                  <b>Đại học 3 Gốc và Mạng xã hội Học tập</b>
-                  suốt đời
+                  <p>
+                    Amet minim mollit non deserunt unllamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
+                  </p>
                 </li>
                 <li>
-                  Phát triển các dự án xoay quanh trục chính:
-                  <b>Cộng đồng sống Tử Tế</b>
+                  <div class="active">Offline</div>
+                </li>
+                <li>
+                  <div class="user">
+                    <img src="./image/person.fill.png" alt="" />
+                    <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="carlenda">
+                    <img src="./image/Calendar.png" alt="" />
+                    <span>Khai giảng:</span>
+                    <span>06/12/2022</span>
+                  </div>
                 </li>
               </ul>
-             <a class="btns" href="#">Xem chi tiết</a>
-            </div>
-            <ul class="phil">
-              <li>
-                <div class="pen">
-                  <img src="./image/pen.png" alt="" />
-                  <h4>Triết lý</h4>
-                </div>
-              </li>
-              <li>
-                3 gốc rễ: <b> Đạo đức - Trí tuệ - Nghị lực</b> dựa trên nền tảng
-                <b>Giới Định Tuệ</b>
-              </li>
-              <li>
-                <div class="pen">
-                  <img src="./image/pen.png" alt="" />
-                  <h4>Tầm nhìn</h4>
-                </div>
-              </li>
-              <li>
-                Trở thành Hệ sịnh thía giáo dục Xanh, truyền tải Đạo đức và kỹ
-                năng tới mọi miền trên Việt Nam
-              </li>
-              <li>
-                <div class="pen">
-                  <img src="./image/pen.png" alt="" />
-                  <h4>Sứ mệnh</h4>
-                </div>
-              </li>
-              <li>
-                Nhân bản hệ giá trị 3 Gốc Rễ:
-                <b> Đạo Đức - Trí Tuệ - Nghị lực</b> đi khắp mọi miền đất nước
-                và lan rộng hơn nữa...
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-5">
-            <div class="about-left">
-              <img src="./image/Group 8212.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section  services-->
-    <section class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="title">
-              <h2>Khóa học nổi bật</h2>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card-services">
-              <div class="card-img">
-               <a href="#"> <img src="./image/Rectangle 1.png" alt="" /></a>
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                    <a href="#"><h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
-                  </li>
-
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li><div class="active">Offline</div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
-                  <a href="#">Đăng ký ngay</a>
-                  <a href="#">Xem chi tiết</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card-services">
-              <div class="card-img">
-              <a href="#">  <img src="./image/Rectangle 2.png" alt="" /></a>
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                   <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
-                  </li>
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li>
-                    <div class="active">
-                      <img src="./image/video.square.fill.png" alt=""> <span>Zoom</span></div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
+              <div class="btn-services">
                 <a href="#">Đăng ký ngay</a>
                 <a href="#">Xem chi tiết</a>
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card-services">
-              <div class="card-img">
-             <a href="#">   <img src="./image/Rectangle 3.png" alt="" /></a>
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                  <a href="#">  <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
-                  </li>
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li><div class="active">Offline</div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
-                  <a href="#">Đăng ký ngay</a>
-                  <a href="#">Xem chi tiết</a>
+        </div>
+        <div class="col-lg-4 col-md-6 ser">
+          <div class="card-services">
+            <div class="card-img">
+              <a href="#"> <img src="./image/Rectangle 2.png" alt="" /></a>
+              <div class="notifis">
+                <div class="notifi">
+                  <img src="./image/megaphone.fill.png" alt="" />
+                  <span>Sắp khai giảng</span>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card-services">
-              <div class="card-img">
-               <a href="#"> <img src="./image/Rectangle 4.png" alt="" /></a>
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
+            <div class="card-content">
+              <ul>
+                <li>
+                  <a href="#">
+                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                  </a>
+                </li>
+                <li>
+                  <p>
+                    Amet minim mollit non deserunt unllamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
+                  </p>
+                </li>
+                <li>
+                  <div class="active zoom">
+                    <img src="./image/video.square.fill.png" alt=""> <span>Zoom</span>
                   </div>
+                </li>
+                <li>
+                  <div class="user">
+                    <img src="./image/person.fill.png" alt="" />
+                    <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="carlenda">
+                    <img src="./image/Calendar.png" alt="" />
+                    <span>Khai giảng:</span>
+                    <span>06/12/2022</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-services">
+                <a href="#">Đăng ký ngay</a>
+                <a href="#">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ser">
+          <div class="card-services">
+            <div class="card-img">
+              <a href="#"> <img src="./image/Rectangle 3.png" alt="" /></a>
+              <div class="notifis">
+                <div class="notifi">
+                  <img src="./image/megaphone.fill.png" alt="" />
+                  <span>Sắp khai giảng</span>
                 </div>
               </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                   
-                    <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
-                  </li>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>
+                  <a href="#">
+                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                  </a>
+                </li>
+                <li>
+                  <p>
+                    Amet minim mollit non deserunt unllamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
+                  </p>
+                </li>
+                <li>
+                  <div class="active zoom"> <img src="./image/video.square.fill.png" alt=""> <span>Zoom</span></div>
+                </li>
+                <li>
+                  <div class="user">
+                    <img src="./image/person.fill.png" alt="" />
+                    <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="carlenda">
+                    <img src="./image/Calendar.png" alt="" />
+                    <span>Khai giảng:</span>
+                    <span>06/12/2022</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-services">
+                <a href="#">Đăng ký ngay</a>
+                <a href="#">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ser">
+          <div class="card-services">
+            <div class="card-img">
+              <a href="#"> <img src="./image/Rectangle 4.png" alt="" /></a>
+              <div class="notifis">
+                <div class="notifi">
+                  <img src="./image/megaphone.fill.png" alt="" />
+                  <span>Sắp khai giảng</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>
 
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li><div class="active">Offline</div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
-                  <a href="#">Đăng ký ngay</a>
-                  <a href="#">Xem chi tiết</a>
-                </div>
+                  <a href="#">
+                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                  </a>
+                </li>
+
+                <li>
+                  <p>
+                    Amet minim mollit non deserunt unllamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
+                  </p>
+                </li>
+                <li>
+                  <div class="active zoom"> <img src="./image/video.square.fill.png" alt=""> <span>Zoom</span></div>
+                </li>
+                <li>
+                  <div class="user">
+                    <img src="./image/person.fill.png" alt="" />
+                    <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="carlenda">
+                    <img src="./image/Calendar.png" alt="" />
+                    <span>Khai giảng:</span>
+                    <span>06/12/2022</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-services">
+                <a href="#">Đăng ký ngay</a>
+                <a href="#">Xem chi tiết</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card-services">
-              <div class="card-img">
-               <a href="#"> <img src="./image/Rectangle 5.png" alt="" /></a>
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                   <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
-                  </li>
-
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li><div class="active">Offline</div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
-                  <a href="#">Đăng ký ngay</a>
-                  <a href="#">Xem chi tiết</a>
+        </div>
+        <div class="col-lg-4 col-md-6 ser">
+          <div class="card-services">
+            <div class="card-img">
+              <a href="#"> <img src="./image/Rectangle 5.png" alt="" /></a>
+              <div class="notifis">
+                <div class="notifi">
+                  <img src="./image/megaphone.fill.png" alt="" />
+                  <span>Sắp khai giảng</span>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card-services">
-              <div class="card-img">
-                <a href="#"><img src="./image/Rectangle 6.png" alt="" /></a>
-                <div class="notifis">
-                  <div class="notifi">
-                    <img src="./image/megaphone.fill.png" alt="" />
-                    <span>Sắp khai giảng</span>
+            <div class="card-content">
+              <ul>
+                <li>
+                  <a href="#">
+                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                  </a>
+                </li>
+
+                <li>
+                  <p>
+                    Amet minim mollit non deserunt unllamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
+                  </p>
+                </li>
+                <li>
+                  <div class="active">Offline</div>
+                </li>
+                <li>
+                  <div class="user">
+                    <img src="./image/person.fill.png" alt="" />
+                    <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
                   </div>
+                </li>
+                <li>
+                  <div class="carlenda">
+                    <img src="./image/Calendar.png" alt="" />
+                    <span>Khai giảng:</span>
+                    <span>06/12/2022</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-services">
+                <a href="#">Đăng ký ngay</a>
+                <a href="#">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ser">
+          <div class="card-services">
+            <div class="card-img">
+              <a href="#"><img src="./image/Rectangle 6.png" alt="" /></a>
+              <div class="notifis">
+                <div class="notifi">
+                  <img src="./image/megaphone.fill.png" alt="" />
+                  <span>Sắp khai giảng</span>
                 </div>
               </div>
-              <div class="card-content">
-                <ul>
-                  <li>
-                   <a href="#"> <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2></a>
-                  </li>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>
+                  <a href="#">
+                    <h2 class="title">Chìa khóa đọc vị được bất kỳ ai</h2>
+                  </a>
+                </li>
 
-                  <li>
-                    <p>
-                      Amet minim mollit non deserunt unllamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat
-                    </p>
-                  </li>
-                  <li><div class="active">Offline</div></li>
-                  <li>
-                    <div class="user">
-                      <img src="./image/person.fill.png" alt="" />
-                      <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carlenda">
-                      <img src="./image/Calendar.png" alt="" />
-                      <span>Khai giảng:</span>
-                      <span>06/12/2022</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="btn-services">
-                  <a href="#">Đăng ký ngay</a>
-                  <a href="#">Xem chi tiết</a>
-                </div>
+                <li>
+                  <p>
+                    Amet minim mollit non deserunt unllamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
+                  </p>
+                </li>
+                <li>
+                  <div class="active zoom"> <img src="./image/video.square.fill.png" alt=""> <span>Zoom</span></div>
+                </li>
+                <li>
+                  <div class="user">
+                    <img src="./image/person.fill.png" alt="" />
+                    <h5>Thầy Quân, Thầy Cường, Cô Sơn</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="carlenda">
+                    <img src="./image/Calendar.png" alt="" />
+                    <span>Khai giảng:</span>
+                    <span>06/12/2022</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-services">
+                <a href="#">Đăng ký ngay</a>
+                <a href="#">Xem chi tiết</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- section socials -->
+  <!-- section socials -->
 
-    <section class="socials">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="title">
-              <h2>Theo dõi chúng tôi trên</h2>
+  <section class="socials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title">
+            <h2>Theo dõi chúng tôi trên</h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
+              <img class="img-1" src="./image/image 1.png" alt="" />
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-          <a href="#">  <div class="social">
-            <img class="img-1" src="./image/image 1.png" alt="" />
-          </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-           <a href="#"> <div class="social">
-            <img class="img-2" src="./image/image 2.png" alt="" />
-          </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-           <a href="#"> <div class="social">
-            <img class="img-3" src="./image/image 6.png" alt="" />
-          </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-           <a href="#"> <div class="social">
-            <img class="img-4" src="./image/image 7.png" alt="" />
-          </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <a href="#"><div class="social">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
+              <img class="img-2" src="./image/image 2.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
+              <img class="img-3" src="./image/image 6.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
+              <img class="img-4" src="./image/image 7.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
               <img class="img-5" src="./image/image 3.png" alt="" />
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <a href="#"><div class="social">
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
               <img class="img-6" src="./image/image 5.png" alt="" />
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-          <a href="#">  <div class="social">
-            <img class="img-7" src="./image/image 8.png" alt="" />
-          </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-           <a href="#" id=""> <div class="social">
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#">
+            <div class="social">
+              <img class="img-7" src="./image/image 8.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <a href="#" id="">
+            <div class="social">
               <img class="img-8" src="./image/image 9.png" alt="" />
-            </div></a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- section share -->
-    <section class="share">
+  <!-- section share -->
+  <section class="share">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title">
+            <h2>Chia sẻ từ học viên</h2>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="member">
+                <div class="member-top"><img src="./image/Ellipse 38.png" alt="">
+                  <div class="name">
+                    <p>CHỊ NGỌC ÁNH</p>
+                    <p>Hồ chí minh</p>
+                  </div>
+                </div>
+                <div class="phay">
+                  <img src="./image/Group.png" alt="">
+                </div>
+                <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet</i></div>
+
+
+
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <div class="member-top"><img src="./image/Ellipse 39.png" alt="">
+                  <div class="name">
+                    <p>ANH HOÀNG MINH </p>
+                    <p>Hà Nội</p>
+                  </div>
+                </div>
+                <div class="phay">
+                  <img src="./image/Group.png" alt="">
+                </div>
+                <div class="member-bottom"> 
+                  <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet
+                  </i>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <div class="member-top"><img src="./image/Ellipse 40.png" alt="">
+                  <div class="name">
+                    <p>CHỊ NGỌC LAN</p>
+                    <p>Vũng Tàu</p>
+                  </div>
+                </div>
+                <div class="phay">
+                  <img src="./image/Group.png" alt="">
+                </div>
+                <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet</i></div>
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <div class="member-top"><img src="./image/Ellipse 40.png" alt="">
+                  <div class="name">
+                    <p>CHỊ NGỌC ÁNH</p>
+
+                    <p>HỒ CHÍ MINH</p>
+                    <div class="phay">
+                      <img src="./image/Group.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet</i></div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- section New -->
+  <section class="news">
+    <div class="next-btn">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="title"><h2>Chia sẻ từ học viên</h2></div>
+
+            <h2 class="title">Tin tức</h2>
           </div>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="member">
-                  <div class="member-top"><img src="./image/Ellipse 38.png" alt=""><div class="name">  <p>CHỊ NGỌC ÁNH</p>
-                
-                    <p>HỒ CHÍ MINH</p>
-                   <div class="phay">
-                    <img src="./image/Group.png" alt=""></div>
-                   </div></div>
-                  <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.  Exercitation veniam consequat sunt nostrud amet</i></div>
-                
-                  
-                  
+          <div class="col-lg-12">
+
+
+
+            <div class="swiper swiper-new  mySwipers">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-new">
+                  <div class="new">
+                    <a href="#"> <img src="./image/slide1.png" alt=""></a>
+                    <div class="date">
+                      <img src="./image/Calendar.png" alt="">
+                      <span>Thứ Năm, 16/02/2021</span>
+
+                    </div>
+                    <a href="#">
+                      <h4>Nghệ thuật thấu hiểu & sắp xếp bàn cờ nhân sự</h4>
+                    </a>
+
+                  </div>
                 </div>
-                  
-                
-              </div> 
-              <div class="swiper-slide"><div class="member">
-                <div class="member-top"><img src="./image/Ellipse 39.png" alt=""><div class="name">  <p>ANH HOÀNG MINH </p>
-              
-                  <p>HÀ NỘI</p>
-                 <div class="phay">
-                  <img src="./image/Group.png" alt=""></div>
-                 </div></div>
-                <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.  Exercitation veniam consequat sunt nostrud amet</i></div>
-              
-                
-                
-              </div></div>
-              <div class="swiper-slide"><div class="member">
-                <div class="member-top"><img src="./image/Ellipse 40.png" alt=""><div class="name">  <p>CHỊ NGỌC LAN</p>
-              
-                  <p>VŨNG TÀU</p>
-                 <div class="phay">
-                  <img src="./image/Group.png" alt=""></div>
-                 </div></div>
-                <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.  Exercitation veniam consequat sunt nostrud amet</i></div>
-              
-                
-                
-              </div></div>
-              <div class="swiper-slide"><div class="member">
-                <div class="member-top"><img src="./image/Ellipse 40.png" alt=""><div class="name">  <p>CHỊ NGỌC ÁNH</p>
-              
-                  <p>HỒ CHÍ MINH</p>
-                 <div class="phay">
-                  <img src="./image/Group.png" alt=""></div>
-                 </div></div>
-                <div class="member-bottom"> <i>Amet minim mollit non deserunt unllamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.  Exercitation veniam consequat sunt nostrud amet</i></div>
-              
-                
-                
-              </div></div>
-             
+                <div class="swiper-slide swiper-slide-new">
+                  <div class="new">
+                    <a href="#"><img src="./image/slide2.png" alt=""></a>
+                    <div class="date">
+                      <img src="./image/Calendar.png" alt="">
+                      <span>Thứ Hai, 13/02/2021</span>
+
+                    </div>
+                    <a href="" id="">
+                      <h4>Bàn về thói quen đọc sách</h4>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-new">
+                  <div class="new">
+                    <a href="#"><img src="./image/slide3.png" alt=""></a>
+                    <div class="date">
+                      <img src="./image/Calendar.png" alt="">
+                      <span>Thứ Sáu, 17/02/2021</span>
+
+                    </div>
+                    <a href="# ">
+                      <h4>Đánh thức bản thể phi thường</h4>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-new">
+                  <div class="new">
+                    <a href="#"><img src="./image/slide4.png" alt=""></a>
+                    <div class="date">
+                      <img src="./image/Calendar.png" alt="">
+                      <span>Thứ Ba, 21/02/2021</span>
+
+                    </div>
+                    <a href="#">
+                      <h4>Kinh dịch - đảo của người quân tử</h4>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-new">
+                  <div class="new">
+                    <a href="#"><img src="./image/slide4.png" alt=""></a>
+                    <div class="date">
+                      <img src="./image/Calendar.png" alt="">
+                      <span>Thứ Ba, 21/02/2021</span>
+                    </div>
+                    <a href="#">
+                      <h4>Kinh dịch - đảo của người quân tử</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination-new"></div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
-     
-    </div>
-    </section>
-
-    <!-- section New -->
-<section class="news">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        
-      <h2 class="title">Tin tức</h2>
+      <div class="swiper-button"><img src="./image/arrow-next.png" alt=""></div>
+      <div class="swiper-button-prv"><img src="./image/arrow-prev.png" alt="">
       </div>
-      <div class="col-lg-12">
-        <div class="swiper swiper-new  mySwipers">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-new"> <div class="new">
-             <a href="#"> <img src="./image/slide1.png" alt=""></a>
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Năm, 16/02/2021</p>
-               
+    </div>
+  </section>
+  <!-- section footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="left">
+            <li>
+              <div class="logo-footer">
+                <a href="#"><img src="./image/Logo 1.png" alt="" /></a>
               </div>
-              <a href="#"><h4>Nghệ thuật thấu hiểu & sắp xếp bàn cờ nhân sự</h4></a>
-              
-            </div>
-          </div>
-            <div class="swiper-slide swiper-slide-new"> <div class="new">
-              <a href="#"><img src="./image/slide2.png" alt=""></a>
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Hai, 13/02/2021</p>
-               
-              </div>
-              <a href="" id=""><h4>Bàn về thói quen đọc sách</h4></a>
-              
-            </div>
-          </div>
-            <div class="swiper-slide swiper-slide-new">
-              <div class="new">
-                <a href="#"><img src="./image/slide3.png" alt=""></a>
-                <div class="date">
-                  <img src="./image/Calendar.png" alt="">
-                  <p>Thứ Sáu, 17/02/2021</p>
-                 
-                </div>
-               <a href="# "> <h4>Đánh thức bản thể phi thường</h4></a>
-                
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-new"><div class="new">
-              <a href="#"><img src="./image/slide4.png" alt=""></a>
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Ba, 21/02/2021</p>
-               
-              </div>
-           <a href="#">   <h4>Kinh dịch - đảo của người quân tử</h4></a>
-              
-            </div></div>
-             <div class="swiper-slide swiper-slide-new"><div class="new">
-              <a href="#"><img src="./image/slide4.png" alt=""></a>
-              <div class="date">
-                <img src="./image/Calendar.png" alt="">
-                <p>Thứ Ba, 21/02/2021</p>
-               
-              </div>
-           <a href="#">   <h4>Kinh dịch - đảo của người quân tử</h4></a>
-              
-          </div>
-            </div>
-          
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination swiper-pagination-new"></div>
+            </li class="content">
+            <p>
+              Nơi lan toả những khoá học & ấn phẩm giúp bạn Sống Sâu Sắc & có
+              ý nghĩa .Đào tạo nguồn nhân lực...
+            </p>
+            <li class="contact"> <img src="./image/telephone 1.png" alt="" />
+              <p><b>Hotline: </b> <a href="#">01233456789</a></p>
+            </li>
+            <li class="contact"><img src="./image/mail 1.png" alt="" />
+              <p><b>Email: </b> <a href="#">Education@gmail.com</a></p>
+            </li>
+          </ul>
         </div>
+        <div class="col-lg-8 ">
+          <div class="row ">
+            <div class="col-lg-4 footer-bt">
 
-      
-      </div>
-    </div>
-  </div>
-</section>
-    <!-- section footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <ul class="left">
-              <li>
-                <div class="logo-footer">
-                  <a href="#"><img src="./image/Logo 1.png" alt="" /></a>
-                </div>
-              </li class="content">
-              <p>
-                Nơi lan toả những khoá học & ấn phẩm giúp bạn Sống Sâu Sắc & có
-                ý nghĩa .Đào tạo nguồn nhân lực...
-              </p>
-              <li class="contact">  <img src="./image/telephone 1.png" alt="" />
-                <p><b>Hotline: </b> <a href="#">01233456789</a></p></li>
-                <li class="contact"><img src="./image/mail 1.png" alt="" />
-                  <p><b>Email: </b> <a href="#">Education@gmail.com</a></p></li>
-            </ul>
-            
-          </div>
-          <div class="col-lg-8 ">
-            <div class="row ">
-              <div class="col-lg-4">
-               
-               <div class="right">
+              <div class="right">
                 <p>Giới thiệu</p>
-                <ul >
-                 
-                 <li><a href="#">Lorem ipsum is simply</a></li>
-                 <li><a href="#">Lorem ipsum is simply</a></li>
-                 <li><a href="#">Lorem ipsum is simply</a></li>
-                  </ul>
-               </div>
+                <ul>
+
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                  <li><a href="#">Lorem ipsum is simply</a></li>
+                </ul>
               </div>
-              <div class="col-lg-4">
-               
-                <div class="right">
-                 <p>Chia sẻ nhanh</p>
-                 <ul >
-                  
+            </div>
+            <div class="col-lg-4 footer-bt">
+
+              <div class="right">
+                <p>Chia sẻ nhanh</p>
+                <ul>
+
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
-                   </ul>
-                </div>
-               </div>   <div class="col-lg-4">
-               
-                <div class="right">
-                 <p>Hỗ trợ</p>
-                 <ul >
-                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 footer-bt">
+
+              <div class="right">
+                <p>Hỗ trợ</p>
+                <ul>
+
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
-                   </ul>
-                </div>
-               </div>   <div class="col-lg-4">
-               
-                <div class="right">
-                 <p>Triết lý & sứ mệnh</p>
-                 <ul >
-                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 footer-bt">
+
+              <div class="right">
+                <p>Triết lý & sứ mệnh</p>
+                <ul>
+
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
-                   </ul>
-                </div>
-               </div>   <div class="col-lg-4">
-               
-                <div class="right">
-                 <p>Thông tin hữu ích </p>
-                 <ul >
-                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 footer-bt">
+
+              <div class="right">
+                <p>Thông tin hữu ích </p>
+                <ul>
+
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
                   <li><a href="#">Lorem ipsum is simply</a></li>
-                   </ul>
-                </div>
-               </div>   <div class="col-lg-4">
-               <div class="right">
-                 <p>Theo dõi tôi trên</p>
-                 <ul class="footer-icon" >
-                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 footer-bt">
+              <div class="right">
+                <p>Theo dõi tôi trên</p>
+                <ul class="footer-icon">
                   <li><a href="#"><img src="./image/Vector Smart Object143-01.png" alt=""></a></li>
                   <li><a href="#"><img src="./image/Vector Smart Object15UY-01.png" alt=""></a></li>
                   <li><a href="#"><img src="./image/Vector Smart Object1TREY-01.png" alt=""></a></li>
                   <li><a href="#"><img src="./image/Vector Smart Object1TREY-01 (1).png" alt=""></a></li>
-               </ul>
+                </ul>
               </div>
-             </div>
-              
             </div>
           </div>
-          <div class="col-lg-12"><p>Bản quyền thuộc về Education | Copyright@ 2022 all rights reserved</p></div>
         </div>
-        
+        <div class="col-lg-12">
+
+      
+        </div>
       </div>
-    </footer>
 
-    <!-- Slider main container -->
+    </div>
+  <hr>
+    <span class="copyright">Bản quyền thuộc về Education | Copyright@ 2022 all rights reserved
+    </span>
+  </footer>
+  <!-- Slider main container -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
 
-    <script>
- 
-    </script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
- <script src="./js/script.js"></script>
-  </body>
 </html>

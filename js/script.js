@@ -3,7 +3,7 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
 
-  spaceBetween: 30,
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var kien = new Swiper(".swiper-new", {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 20,
 
   loop: true,
 
@@ -21,8 +21,8 @@ var kien = new Swiper(".swiper-new", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button",
+    prevEl: ".swiper-button-prv",
   },
 });
 // nav-mobile
