@@ -13,6 +13,7 @@ var swiper = new Swiper(".mySwiper", {
     375: {
       slidesPerView: 1,
     },
+
     768: {
       slidesPerView: 2,
       spaceBetween: 10,
@@ -23,7 +24,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
 // swipper news
 var swiperNew = new Swiper(".swiper-new", {
   slidesPerView: 4,
@@ -44,6 +44,10 @@ var swiperNew = new Swiper(".swiper-new", {
     375: {
       slidesPerView: 1,
       spaceBetween: 20,
+    },
+    667: {
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 2,

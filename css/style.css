@@ -251,6 +251,12 @@ header {
   filter: drop-shadow(0px 0px 4px rgba(0 0 0 /20%));
   padding-bottom: 10px;
 }
+.services .card-services:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.services .card-services:hover .boxImg {
+  transform: scale(1.2);
+}
 .services .title-service {
   margin: 80px 0 45px 0;
 }
@@ -261,11 +267,7 @@ header {
 }
 .card-services .card-img {
   position: relative;
-}
-.card-services .card-img .boxImg {
-  width: auto;
-  height: 231px;
-  background-color: red;
+  overflow: hidden;
 }
 /* img services */
 .card-services .card-img .img-1 {
@@ -306,6 +308,11 @@ header {
   font-size: 18px;
   color: white;
   background-color: #d93434;
+}
+.card-services .card-img .boxImg {
+  width: auto;
+  height: 231px;
+  transition: 0.5s;
 }
 .card-services .card-img .notifis img {
   width: 17px;
@@ -420,56 +427,52 @@ header {
   display: flex;
   align-items: center;
 }
+.socials .social {
+  border: 1px solid #f5f5f5;
+}
 .socials .social .boxImg-social {
   width: 245px;
   height: 95px;
+  background-size: auto 35%;
 }
 /* social img */
 .socials .social .social-img-1 {
   background-image: url("../image/youtube.png");
-  background-size: auto 90%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-2 {
   background-image: url("../image/tiktok.png");
-  background-size: auto 50%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-3 {
   background-image: url("../image/podcadsts.png");
-  background-size: auto 30%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-4 {
   background-image: url("../image/spotify.png");
-  background-size: auto 50%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-5 {
   background-image: url("../image/facebook.png");
-  background-size: auto 35%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-6 {
   background-image: url("../image/zalo.png");
-  background-size: auto 50%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-7 {
   background-image: url("../image/apple-podcasts.png");
-  background-size: auto 50%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .socials .social .social-img-8 {
   background-image: url("../image/insta.png");
-  background-size: auto 85%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -489,7 +492,7 @@ header {
   -moz-box-shadow: -1px -1px 16px 11px rgba(201, 201, 201, 0.75);
 }
 .socials .title {
-  margin: 0 0 50px 0;
+  margin: 40px 0;
   font-size: 40px;
   text-align: center;
   font-family: "Baloo";
@@ -614,6 +617,9 @@ header {
   width: auto;
   height: 266px;
 }
+.news .new .new-item {
+  overflow: hidden;
+}
 .news .title {
   text-align: center;
   font-size: 40px;
@@ -625,6 +631,10 @@ header {
   height: 174.69px;
   margin: 0;
   padding: 0;
+  transition: 0.5s;
+}
+.news .new:hover .boxImg-new {
+  transform: scale(1.2);
 }
 /* new image */
 .news .new .new-1 {
@@ -746,6 +756,9 @@ header {
 }
 .footer .left .footer-title {
   margin: 1rem 0;
+  color: #a1b2c6;
+  display: flex;
+  align-items: center;
 }
 .footer .left .contact p a {
   color: #a1b2c6;
@@ -788,8 +801,8 @@ header {
 .footer .right .footer-icon li a img:hover {
   opacity: 0.7;
 }
-.footer .col-lg-12 {
-  text-align: center;
+.footer .contact {
+  display: flex;
 }
 .footer .copyright {
   font-size: 10px;
@@ -803,6 +816,10 @@ header {
 }
 .footer .footer-bt {
   margin-bottom: 20px;
+}
+.services .card-content .btn-services a {
+  margin: 0 3px;
+  font-size: 12px;
 }
 /* responsive */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -839,6 +856,9 @@ header {
     display: flex;
     align-items: center;
   }
+  .footer .contact-1 {
+    margin-top: 1rem;
+  }
   .banner .content {
     margin-top: 100px;
   }
@@ -847,6 +867,12 @@ header {
   }
   .news .title {
     margin: 50px 0 40px 0;
+  }
+  .news .new .boxImg-new {
+    height: 220px;
+  }
+  .news .swiper-slide-new {
+    margin-bottom: 100px;
   }
   .about .about-left {
     width: 748px;
@@ -861,20 +887,35 @@ header {
   .header .bars {
     display: block;
     right: 10px;
-    top: -20px;
+    top: -15px;
     position: absolute;
+  }
+  .about .about-left {
+    width: 492px;
+    height: 389px;
+  }
+  .banner .content {
+    margin-top: 40px;
   }
   .menu-mobile .menu-mobile-list li a {
     color: #2d2d2d;
   }
   .menu-mobile .menu-mobile-container {
-    height: calc(100% - 82px);
+    height: calc(100% - 0px);
     overflow-y: auto;
   }
-}
-.services .card-content .btn-services a {
-  margin: 0 3px;
-  font-size: 12px;
+  .services .card-content .btn-services a {
+    padding: 5px 10px !important;
+  }
+  .socials .socials-item {
+    margin-bottom: 40px;
+  }
+  .services .card-content .carlenda span {
+    font-size: 14px;
+  }
+  .footer .contact-1 {
+    margin-top: 1rem;
+  }
 }
 /* mobile */
 @media screen and (max-width: 575px) {
@@ -891,10 +932,13 @@ header {
     color: #2d2d2d;
   }
   .menu-mobile .close {
-    left: 0px;
+    right: 10px;
   }
   .banner .content {
     margin-top: 50px;
+  }
+  .banner h1 {
+    font-size: 34px;
   }
   .about .content {
     padding: 0 10px;
@@ -910,20 +954,35 @@ header {
     margin: 40px 0;
   }
   .about .content h2 {
-    font-size: 30px;
+    font-size: 34 px;
   }
   .services .title-service h2 {
     font-size: 30px;
   }
+  .socials .social {
+    border: 1px #f5f5f5 solid;
+  }
+  .socials .socials-item {
+    margin-bottom: 50px;
+  }
+  .socials .social .boxImg-social {
+    height: 70px;
+  }
   .socials .title {
-    font-size: 30px;
+    font-size: 32px;
     margin: 40px 0;
   }
+  .about .content h2 {
+    font-size: 32px;
+  }
+  .services .title-service h2 {
+    font-size: 32px;
+  }
   .share .title h2 {
-    font-size: 30px;
+    font-size: 32px;
   }
   .news .title {
-    font-size: 40px;
+    font-size: 32px;
     margin: 40px 0;
   }
   .news .next-btn .swiper-button {
@@ -932,7 +991,20 @@ header {
   .news .swiper-button-prv {
     display: none;
   }
+  .footer .left {
+    padding: 0 10px;
+  }
   .footer .left li:first-child {
     justify-content: center;
+  }
+  .news .new .boxImg-new {
+    height: 220px;
+  }
+  .news .swiper-slide-new {
+    margin-bottom: 100px;
+  }
+  .logo-footer {
+    justify-content: center;
+    display: flex;
   }
 }
