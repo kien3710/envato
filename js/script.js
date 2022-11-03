@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },
@@ -57,6 +57,8 @@ var swiperNew = new Swiper(".swiper-new", {
 });
 // nav-mobile
 function bars() {
+  var show = document.querySelector(".BgHv");
   var nav = document.querySelector(".menu-mobile");
   nav.classList.toggle("actives");
+  show.classList.toggle("show");
 }
