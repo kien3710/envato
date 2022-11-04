@@ -916,6 +916,15 @@ header {
   .footer .contact-1 {
     margin-top: 1rem;
   }
+  .services .title-service {
+    margin: 40px 0;
+  }
+  .news .title {
+    margin: 40px 0;
+  }
+  .share .title h2 {
+    margin: 40px 0;
+  }
 }
 /* mobile */
 @media screen and (max-width: 575px) {
