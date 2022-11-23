@@ -31,3 +31,11 @@ var swipers = new Swiper(".mySlide-2", {
     prevEl: ".swiper-prev",
   },
 });
+
+//
+function bars() {
+  var show = document.querySelector(".BgHv");
+  var nav = document.querySelector(".menu-mobile");
+  nav.classList.toggle("actives");
+  show.classList.toggle("show");
+}

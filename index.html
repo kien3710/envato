@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- background show -->
-
+    <div onclick="bars()" class="BgHv"></div>
     <!-- header -->
     <header>
       <div class="about-header">
@@ -40,10 +40,14 @@
       <div class="navgation">
         <div class="container">
           <div class="row">
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-2">
               <a href=""><div class="logo imgLogo"></div></a>
             </div>
-            <div class="col-lg-11">
+
+            <div class="col-lg-11 col-md-10">
+              <div class="bars">
+                <i onclick="bars()" class="fa-solid fa-bars"></i>
+              </div>
               <ul class="nav">
                 <li class="icon-home">
                   <a href=""><img src="./Assets/home.png" alt="" /></a>
@@ -58,6 +62,31 @@
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="menu-mobile">
+        <div onclick="bars()" class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-mobile-container">
+          <ul class="menu-mobile-list">
+            <li><a href="#">Trang chủ</a></li>
+            <hr />
+            <li><a href="#">Giới thiệu</a></li>
+            <hr />
+            <li><a href="#">Khóa học</a></li>
+            <hr />
+            <li><a href="#">Dịch lý</a></li>
+            <hr />
+            <li><a href="#">Phong thủy</a></li>
+            <hr />
+            <li><a href="#">Nhân tướng học</a></li>
+            <hr />
+            <li><a href="#">Tin tức</a></li>
+            <hr />
+            <li><a href="#">Liên hệ</a></li>
+            <hr />
+          </ul>
         </div>
       </div>
       <div class="advertise">
