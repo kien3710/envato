@@ -1,5 +1,26 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .work {
+    min-height: 2500px;
+  }
+  .reviews {
+    min-height: auto;
+  }
+  .info {
+    margin-bottom: 50px;
+  }
+  .info form select {
+    margin-bottom: 1rem;
+  }
+  header .navgation .nav {
+    display: none;
+  }
+  .info .description-text {
+    width: 50%;
+  }
 }
 /* moble & tablet */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  header .navgation .nav {
+    display: none;
+  }
 }
