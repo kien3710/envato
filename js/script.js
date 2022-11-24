@@ -20,7 +20,7 @@ var swiper = new Swiper(".mySlide-1", {
 
 // slide -2
 var swipers = new Swiper(".mySlide-2", {
-  spaceBetween: -30,
+  spaceBetween: 0,
   slidesPerView: 3,
   centeredSlides: true,
   roundLengths: true,
@@ -30,6 +30,18 @@ var swipers = new Swiper(".mySlide-2", {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
   },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 //
@@ -37,5 +49,5 @@ function bars() {
   var show = document.querySelector(".BgHv");
   var nav = document.querySelector(".menu-mobile");
   nav.classList.toggle("actives");
-  show.classList.toggle("show");
+  show.classList.toggle("shows");
 }
