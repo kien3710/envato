@@ -925,7 +925,7 @@ footer form .input-group input {
   border: none;
 }
 
-footer form .input-group .input-group-append span {
+footer form .input-group .input-group-append button {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   background-color: var(--red);
