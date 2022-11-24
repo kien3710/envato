@@ -176,6 +176,9 @@ header .about-contact .contact-item a {
   font-weight: bold;
   color: var(--red);
 }
+header .about-contact .contact-item a:hover {
+  color: #7e0822;
+}
 header .about-contact .contact {
   background-color: var(--red);
   padding: 5px 20px;
@@ -484,9 +487,6 @@ header .overview .title-2 li span {
 }
 /*  */
 
-.work-2 {
-  min-height: 600px;
-}
 .work-2 .card-1 {
   cursor: pointer;
   border: 0.5px solid #dee1e0;
@@ -649,6 +649,7 @@ header .overview .title-2 li span {
 }
 .reviews .title-reviews {
   color: var(--white);
+  font-size: 18px;
 }
 /* slide-1 */
 .slide-1 {
@@ -717,7 +718,7 @@ header .overview .title-2 li span {
   color: var(--green-main);
   font-style: italic;
   margin-bottom: 0.5rem;
-  font-size: 14px;
+  font-size: 15px;
 }
 .avatar-name {
   font-weight: bold;
@@ -755,7 +756,6 @@ header .overview .title-2 li span {
   height: 300px;
   width: 100%;
   display: flex;
-  background: #eee;
   align-items: center;
   justify-content: center;
   transition: all 200ms linear;
@@ -772,7 +772,6 @@ header .overview .title-2 li span {
   display: block;
   width: 100%;
   height: 300px;
-
   border-radius: 10px;
 }
 .slide-2 .swiper-next {
@@ -833,6 +832,7 @@ header .overview .title-2 li span {
   justify-content: center;
 }
 .info .description-text {
+  font-size: 18px;
   width: 60%;
   color: var(--brown-text);
 }
