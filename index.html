@@ -16,7 +16,7 @@
     <header>
       <div class="about-header">
         <div class="container">
-          <div class="row d-flex align-items-center text-center">
+          <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-12">
               <h1>
                 Du lịch sen Xanh - Công ty du lịch uy tín, chuyên nghiệp hàng
@@ -165,7 +165,113 @@
                             Sớm</span
                           >
                         </li>
-                        <a class="btn-red" href="">ĐẶT TOUR NGAY</a>
+                        <li class="btns">
+                          <a
+                            type="button"
+                            class="btn btn-primary btn-red"
+                            data-toggle="modal"
+                            data-target="#exampleModalCenter"
+                            >ĐẶT TOUR NGAY</a
+                          >
+                        </li>
+                        <!-- modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModalCenter"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalCenterTitle"
+                          aria-hidden="true"
+                        >
+                          <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                          >
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title"
+                                  id="exampleModalLongTitle"
+                                >
+                                  Lịch khởi hành và giá
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    class="fa-solid fa-circle-xmark"
+                                  ></i>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <ul>
+                                  <li>
+                                    <span>Chọn ngày khởi hành </span>
+                                    <div class="date">
+                                      <span>25/01/2023</span>
+                                      <img
+                                        class="img-date"
+                                        src="./Assets/calendar.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="modal-people">
+                                      <div class="people">
+                                        <span>Người lớn</span>
+                                      </div>
+                                      <span class="modal-price"
+                                        >X10.000.000 VNĐ</span
+                                      >
+                                    </div>
+                                    <div class="active">
+                                      <i class="fa-solid fa-circle-minus"></i>
+
+                                      <span>2</span>
+                                      <i class="fa-solid fa-circle-plus"></i>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="modal-people">
+                                      <div class="people">
+                                        <span>Trẻ em</span>
+                                      </div>
+                                      <span class="modal-price"
+                                        >X5.00.000 VNĐ</span
+                                      >
+                                    </div>
+                                    <div class="active">
+                                      <i class="fa-solid fa-circle-minus"></i>
+
+                                      <span>2</span>
+                                      <i class="fa-solid fa-circle-plus"></i>
+                                    </div>
+                                  </li>
+                                  <li class="price">
+                                    <span>Tổng cộng</span>
+                                    <span>25.000.000 VNĐ</span>
+                                  </li>
+                                  <li>
+                                    <span
+                                      >Giảm đến 1.000.000 cho nhóm từ 5 khách
+                                    </span>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                  Đặt tour
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
                       </ul>
                     </div>
                   </div>
@@ -955,57 +1061,61 @@
               <ul class="localtion">
                 <li class="title-footer"><span>Chi nhánh</span></li>
                 <li class="local">
-                  <a href=""
-                    ><i class="fa-solid fa-location-dot"></i
-                    ><b>Hồ Chí Minh:</b> Lorem Ipsum simply dummy text of the
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-solid fa-phone-volume"></i
-                    ><b>Hotline:</b> 0123456789</a
+                  <div class="local-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <span
+                    ><b>Hồ Chí Minh:</b> Lorem Ipsum simply dummy text of
+                    the</span
                   >
                 </li>
                 <li>
-                  <a href=""
-                    ><i class="fa-solid fa-envelope"></i
-                    ><b>Email:</b> phoxanh@gmail.com</a
-                  >
-                </li>
-
-                <li>
-                  <a href=""
-                    ><i class="fa-solid fa-location-dot"></i
-                    ><b>Hà Nội:</b> Lorem Ipsum simply dummy text of the
-                  </a>
+                  <div class="local-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <span><b>Hotline:</b> 0123456789</span>
                 </li>
                 <li>
-                  <a href=""
-                    ><i class="fa-solid fa-phone-volume"></i
-                    ><b>Hotline:</b> 0123456789</a
+                  <div class="local-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <span><b>Email:</b> phoxanh@gmail.com</span>
+                </li>
+                <li>
+                  <div class="local-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <span
+                    ><b>Hà Nội:</b> Lorem Ipsum simply dummy text of the</span
                   >
                 </li>
                 <li>
-                  <a href=""
-                    ><i class="fa-solid fa-envelope"></i
-                    ><b>Email:</b> phoxanh@gmail.com</a
-                  >
+                  <div class="local-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <span><b>Hotline:</b> 0123456789</span>
+                </li>
+                <li>
+                  <div class="local-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <span> <b>Email:</b> phoxanh@gmail.com</span>
                 </li>
                 <hr />
               </ul>
               <ul class="">
                 <li class="title-footer"><span>Bạn cần trợ giúp?</span></li>
                 <li class="local">
-                  <a href=""
-                    ><i class="fa-solid fa-phone-volume"></i
-                    ><b>Hotline:</b> 0123456789</a
-                  >
+                  <div class="local-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <span><b>Hotline:</b> 0123456789</span>
                 </li>
                 <li class="">
-                  <a href=""
-                    ><i class="fa-solid fa-clock"></i><b>Thời gian: </b> 8h30 -
-                    15h30 hàng ngày</a
-                  >
+                  <div class="local-icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <span><b>Thời gian: </b> 8h30 - 15h30 hàng ngày</span>
                 </li>
               </ul>
             </div>

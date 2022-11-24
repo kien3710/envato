@@ -106,7 +106,7 @@ header .navgation .bars {
 .menu-mobile .close {
   position: absolute;
   right: 10px;
-  top: 3px;
+  top: 13px;
 }
 .menu-mobile-container {
   height: calc(100% - 0px);
@@ -126,9 +126,13 @@ header .navgation .bars {
 }
 .menu-mobile .menu-mobile-container li {
   list-style: none;
+  padding: 10px;
 }
 .menu-mobile .menu-mobile-list {
   padding: 30px 30px 30px 10px;
+}
+.menu-mobile .menu-mobile-list hr {
+  margin: 0;
 }
 .menu-mobile .menu-mobile-container li a {
   text-decoration: none;
@@ -219,7 +223,7 @@ header .navgation .logo {
 header .navgation .imgLogo {
   background-image: url("../Assets/logo.png");
   background-position: center;
-  background-size: auto 80%;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 header .navgation .navs .icon-home a img {
@@ -241,12 +245,120 @@ header .content-banner {
   min-height: 384px;
   border-radius: 10px;
 }
+header .content-banner .modal-content {
+  border: none;
+}
+header .content-banner .modal-content .modal-header {
+  background-color: var(--green-main);
+}
+header .content-banner .modal-content .modal-header .modal-title {
+  color: var(--white);
+  font-weight: bold;
+}
+header .content-banner .modal-content .modal-header .close i {
+  color: white;
+}
+header .content-banner .modal-content .modal-body ul {
+}
+header .content-banner .modal-content .modal-body ul li {
+  border: 0.5px solid #dee1e0;
+  padding: 10px 0;
+  text-indent: 10px;
+
+  margin: 10px 0;
+}
+header .content-banner .modal-content .modal-body ul li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content-banner .modal-content .modal-body ul li i {
+  width: 20px;
+  height: 20px;
+}
+header .content-banner .modal-content .modal-body ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content-banner .modal-content .modal-body ul li .active {
+  padding: 0 20px;
+}
+header .content-banner .modal-content .modal-body ul li .active i {
+  color: var(--green-main);
+}
+header .content-banner .modal-content .modal-body .modal-people {
+  display: flex;
+}
+header .content-banner .modal-content .modal-body ul li .active span {
+  padding-left: 13px;
+}
+header .content-banner .modal-content .modal-body .modal-people .people {
+  padding-right: 20px;
+}
+header .content-banner .modal-content .modal-body ul li .date {
+  align-items: center;
+  display: flex;
+}
+header .content-banner .modal-content .modal-body ul li .date img {
+  margin: 0 10px;
+}
+header .content-banner .modal-content .modal-body ul .price {
+  border: none;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+header .content-banner .modal-content .modal-body ul .price span {
+}
+header .content-banner .modal-content .modal-body ul .price span:first-child {
+  font-weight: bold;
+}
+header .content-banner .modal-content .modal-body ul .price span:last-child {
+  color: var(--green-main);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+header .content-banner .modal-content .modal-body {
+  padding: 0;
+}
+header .content-banner .modal-content .modal-body ul li:last-child {
+  border: none;
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  color: var(--green-main);
+  font-weight: bold;
+}
+header .content-banner .modal-content .modal-footer {
+  border: none;
+  padding: 0 1rem 1rem 1rem;
+}
+header .content-banner .modal-content .modal-footer button {
+  width: 100%;
+  border-radius: 30px;
+  background-color: var(--red);
+  outline: none;
+  border: none;
+  padding: 7px 0;
+  margin-bottom: 20px;
+}
+.modal-price {
+  color: var(--green-main);
+  font-weight: bold;
+}
+/*  */
 header .advertise h2 {
   font-weight: bold;
   color: var(--green-dark);
 }
 header .advertise-content .content-banner ul {
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 header .advertise-content .content-banner ul li {
   margin-bottom: 0.7rem;
@@ -271,6 +383,7 @@ header .advertise-content .content-banner ul .btn-red {
   padding: 10px 20px;
   font-weight: bold;
   border-radius: 30px;
+  border: none;
 }
 header .advertise-content .content-banner ul .btn-red:hover {
   background-color: #bd6e7f;
@@ -863,6 +976,7 @@ header .overview .title-2 li span {
 .info form select {
   border: 1px solid var(--green-main);
   border-radius: 10px;
+  height: 46px !important;
 }
 .info form input::placeholder {
   color: var(--green-main);
@@ -876,12 +990,16 @@ header .overview .title-2 li span {
 }
 .info form button {
   background-color: var(--red);
+  cursor: pointer;
   color: var(--white);
   padding: 15px 35px;
   font-weight: bold;
   border-radius: 30px;
   outline: none;
   border: none;
+}
+.info form button:hover {
+  background-color: #bd6e7f;
 }
 
 /* section footer */
@@ -903,6 +1021,13 @@ footer ul {
 footer ul li {
   list-style: none;
   margin-bottom: 0.5rem;
+  display: flex;
+  cursor: pointer;
+}
+footer ul li .local-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 footer ul li a i {
   margin-right: 7px !important;
@@ -911,6 +1036,13 @@ footer ul li a i {
 }
 footer a {
   color: var(--white);
+}
+footer span {
+  color: var(--white);
+}
+footer i {
+  color: var(--white);
+  font-size: 20px;
 }
 footer a:hover {
   color: var(--green-dark);
@@ -932,6 +1064,7 @@ footer form .input-group .input-group-append button {
   color: var(--white);
   padding: 10px 20px;
   border: none;
+  outline: none;
 }
 footer .icon-footer {
   cursor: pointer;
