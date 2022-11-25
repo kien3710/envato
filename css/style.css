@@ -202,14 +202,47 @@ header .navgation .navs li a {
   color: var(--white);
   font-weight: bold;
 }
-
+header .navgation .navs li a:hover {
+  color: var(--green-dark);
+  font-weight: bold;
+}
 header .navgation .navs li {
   list-style: none;
   padding: 15px 10px;
 }
-header .navgation .navs li:hover {
-  background-color: var(--green-dark);
+header .navgation .navs .lastLi {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
 }
+/* menu cap 2 */
+header .navgation .navs li:hover > ul {
+  display: block;
+}
+header .navgation .navs li .menuCap-1 {
+  position: absolute;
+  top: 5px;
+  padding-top: 33px;
+  min-width: 200px;
+  display: none;
+  z-index: 1;
+}
+header .navgation .navs li .menuCap-1 li {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--green-main);
+  text-align: left;
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+}
+header .navgation .navs li .menuCap-1 li:hover {
+  color: var(--red);
+}
+
+/*  */
 header .navgation .navs {
   display: flex;
   align-items: center;
@@ -315,8 +348,7 @@ header .content-banner .modal-content .modal-body ul .price {
   width: 100%;
   padding: 0;
 }
-header .content-banner .modal-content .modal-body ul .price span {
-}
+
 header .content-banner .modal-content .modal-body ul .price span:first-child {
   font-weight: bold;
 }
@@ -377,18 +409,18 @@ header .advertise-content .content-banner ul li img {
   width: 24px;
   height: 24px;
 }
-header .advertise-content .content-banner ul li:nth-child(8) {
-  margin-bottom: 30px;
-}
 
 header .advertise-content .content-banner ul .btn-red {
-  margin-top: 30px;
   background-color: var(--red);
   color: var(--white);
   padding: 10px 20px;
   font-weight: bold;
   border-radius: 30px;
   border: none;
+}
+header .advertise-content .content-banner ul .btns {
+  justify-content: center;
+  margin: 0;
 }
 header .advertise-content .content-banner ul .btn-red:hover {
   background-color: #bd6e7f;
@@ -526,6 +558,7 @@ header .overview .title-2 li span {
 .parent-item {
   border-radius: 20px;
   margin: 7px;
+  cursor: pointer;
 }
 .title-work {
   margin-top: 200px;
@@ -564,7 +597,7 @@ header .overview .title-2 li span {
   grid-area: 1 / 4 / 6 / 8;
   background-image: url("../Assets/hoatdong-5.png");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto 120%;
   background-position: center;
 }
 .parent-item-6 {
@@ -585,7 +618,7 @@ header .overview .title-2 li span {
   grid-area: 5 / 8 / 9 / 10;
   background-image: url("../Assets/hoatdong-8.png");
   background-repeat: no-repeat;
-  background-size: auto 101%;
+  background-size: auto 100%;
   background-position: center;
 }
 .parent-item-9 {
@@ -599,7 +632,7 @@ header .overview .title-2 li span {
   grid-area: 4 / 10 / 9 / 11;
   background-image: url("../Assets/hoatdong-1.png");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: atuo 100%;
   background-position: center;
   width: 141px;
 }

@@ -45,6 +45,13 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
+  .slide-1 .swiper-pagination-bullet-active {
+    background-color: #d31e4bed !important;
+  }
+  .slide-1 .swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: #818181;
+  }
 }
 /* moble & tablet */
 
@@ -99,6 +106,13 @@
   }
   .content-banner {
     margin-top: 10px;
+  }
+  .slide-1 .swiper-pagination-bullet-active {
+    background-color: #d31e4bed !important;
+  }
+  .slide-1 .swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: #818181;
   }
 }
 
@@ -194,5 +208,15 @@
     height: auto;
     transform: scale(1.4, 0.8);
     border-radius: 10px;
+  }
+  header .advertise-content .content-banner ul {
+    padding: 20px 10px;
+  }
+  .slide-1 .swiper-pagination-bullet-active {
+    background-color: #d31e4bed !important;
+  }
+  .slide-1 .swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: #818181;
   }
 }
