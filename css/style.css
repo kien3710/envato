@@ -239,7 +239,7 @@ header .navgation .navs li .menuCap-1 li {
   cursor: pointer;
 }
 header .navgation .navs li .menuCap-1 li:hover {
-  color: var(--red);
+  color: var(--green-dark);
 }
 
 /*  */
