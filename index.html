@@ -10,180 +10,193 @@
     <script src="js/jquery-3.6.1.min.js"></script>
   </head>
   <body>
-    <!-- Header -->
-    <div>
-      <div onclick="bars()" class="background__mobile"></div>
-      <div class="menu__mobile">
-        <div class="menu__header">
-          <a href="#"><img src="./Assets/logo.png" alt="" /></a>
-          <i onclick="bars()" class="fa-solid fa-xmark"></i>
+    <!-- menu mobile -->
+    <div onclick="bars()" class="background__mobile"></div>
+    <div class="menu__mobile">
+      <div class="menu__header">
+        <a href="#"><img src="./Assets/logo.png" alt="" /></a>
+        <i onclick="bars()" class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="menu__body">
+        <div class="btn">
+          <a href="#">Get unlimited downloads</a>
+          <a href="#">Sign in</a>
         </div>
-        <div class="menu__body">
-          <div class="btn">
-            <a href="#">Get unlimited downloads</a>
-            <a href="#">Sign in</a>
-          </div>
-          <ul class="link__nav">
-            <li><a href="">All categories</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="">Tips & Resources</a></li>
-            <li><a href="">License</a></li>
-            <li><a href="">Pricing</a></li>
+        <ul class="link__nav">
+          <li><a href="">All categories</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="">Tips & Resources</a></li>
+          <li><a href="">License</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+        <div class="socials">
+          <span>CONNECT WITH US</span>
+          <ul class="icon-footer">
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
           </ul>
-          <div class="socials">
-            <span>CONNECT WITH US</span>
-            <ul class="icon-footer">
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="header">
-                <div class="header_section">
-                  <div class="col-lg-2 col-md-10 col-10">
-                    <div class="logo">
-                      <a href="#"><img src="./Assets/logo.png" alt="" /></a>
-                    </div>
-                    <div class="search-table">
-                      <form class="form-inline">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <select class="input-group-text" id="basic-addon1">
-                              <option value="">Web Templates</option>
-                              <label for="">alo</label>
-                              <option value="">All Item</option>
-                            </select>
-                          </div>
-                          <input
-                            type="text"
-                            class="form-control"
-                            aria-label="Username"
-                            aria-describedby="basic-addon1"
-                          />
-                          <div class="input-group-prepend">
-                            <button class="input-group-text">
-                              <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
+    </div>
+    <!-- end -->
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header">
+              <div class="header_section">
+                <div class="col-lg-2 col-md-10 col-sm-10 col-10">
+                  <div class="logo">
+                    <a href="#"><img src="./Assets/logo.png" alt="" /></a>
                   </div>
-                  <div
-                    class="col-lg-10 col-md-2 col-2 d-flex align-items-center justify-content-between"
-                  >
-                    <div class="search">
-                      <form class="form-inline">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <select class="input-group-text" id="basic-addon1">
-                              <option value="">Web Templates</option>
-                              <label for="">alo</label>
-                              <option value="">All Item</option>
-                            </select>
-                          </div>
-                          <input
-                            type="text"
-                            class="form-control"
-                            aria-label="Username"
-                            aria-describedby="basic-addon1"
-                          />
-                          <div class="input-group-prepend">
-                            <button class="input-group-text">
-                              <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                          </div>
+                  <div class="search-table">
+                    <form class="form-inline">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <select class="input-group-text" id="basic-addon1">
+                            <option value="">Web Templates</option>
+                            <label for="">alo</label>
+                            <option value="">All Item</option>
+                          </select>
                         </div>
-                      </form>
-                    </div>
-                    <div class="sign">
-                      <a class="signIn" href="#"
-                        ><i class="fa-solid fa-circle-user"></i>Sign In</a
-                      >
-                    </div>
-                    <div class="bar">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-prepend">
+                          <button class="input-group-text">
+                            <i
+                              onclick="search()"
+                              class="fa-solid fa-magnifying-glass"
+                            ></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-10 col-md-2 col-sm-2 col-2 d-flex align-items-center justify-content-between"
+                >
+                  <div class="search">
+                    <form class="form-inline">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <select class="input-group-text" id="basic-addon1">
+                            <option value="">Web Templates</option>
+                            <label for="">alo</label>
+                            <option value="">All Item</option>
+                          </select>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-prepend">
+                          <button class="input-group-text">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="sign">
+                    <a class="signIn" href="#"
+                      ><i class="fa-solid fa-circle-user"></i>Sign In</a
+                    >
+                  </div>
+                  <div class="bar">
+                    <div class="icon-search">
                       <i
                         onclick="search()"
                         class="fa-solid fa-magnifying-glass"
                       ></i>
-                      <i onclick="bars()" class="fa fa-bars"></i>
                     </div>
+                    <i onclick="bars()" class="fa fa-bars"></i>
                   </div>
                 </div>
-                <ul class="header_menu">
-                  <li>
-                    <a href="#">Stock Video</a>
-                    <div class="submenu">
-                      <ul>
-                        <li>
-                          <a href="#"><span>Stock Footage</span></a>
-                        </li>
-                        <li>
-                          <a href="#"><span>Powerpont</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="#">Video Template</a></li>
-                  <li><a href="#">Music</a></li>
-                  <li><a href="#">Sound Effect</a></li>
-                  <li><a href="#">Graphic Template</a></li>
-                  <li><a href="#">Graphic</a></li>
-                  <li>
-                    <a href="#">Presentation Templates</a>
-                    <ul class="submenu">
+              </div>
+              <ul class="header_menu">
+                <li>
+                  <a href="#">Stock Video</a>
+                  <div class="submenu">
+                    <ul>
                       <li>
-                        <a href="#"><span>Key note</span></a>
+                        <a href="#"><span>Footage</span></a>
                       </li>
                       <li>
                         <a href="#"><span>Powerpont</span></a>
                       </li>
                     </ul>
-                  </li>
-                  <li><a href="#">Photo</a></li>
-                  <li><a href="#">Font</a></li>
-                  <li><a href="#">Add-ons</a></li>
-                  <li><a href="#">Web Template</a></li>
-                  <li><a href="#">CMS Templates</a></li>
-                  <li><a href="#">More</a></li>
-                </ul>
-              </div>
+                  </div>
+                </li>
+                <li><a href="#">Video Template</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Sound Effect</a></li>
+                <li><a href="#">Graphic Template</a></li>
+                <li><a href="#">Graphic</a></li>
+                <li>
+                  <a href="#">Presentation Templates</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#"><span>Key note</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span>Powerpont</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Font</a></li>
+                <li><a href="#">Add-ons</a></li>
+                <li><a href="#">Web Template</a></li>
+                <li><a href="#">CMS Templates</a></li>
+                <li><a href="#">More</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </header>
-      <!-- end -->
-      <!-- Content -->
-      <section class="content">
-        <div class="container">
-          <div class="row">
-            <!-- <div class="sidebar-tab">
+      </div>
+    </header>
+    <!-- end -->
+    <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-1 col-sm-1 col-2 sidebar-shadow">
+            <div class="sidebar">
               <div class="sidebar-item">
                 <div class="sidebar__item--hr">
                   <div class="sidebar__header">
                     <div class="text-sidebar">
                       <i
-                        onclick="sidebar()"
-                        class="fa-solid fa-sliders btn-tab"
+                        onclick="toggle()"
+                        class="fa-solid fa-sliders toggle-sliders"
                       ></i>
-                      <span>Filtes</span>
+                      <i
+                        onclick="sidebar()"
+                        class="fa-solid fa-sliders sidebar-sliders"
+                      ></i>
+                      <span class="filtes">Filtes</span>
                     </div>
-                    <i class="fa-solid fa-angle-left"></i>
+                    <div onclick="toggle()" class="filtess">
+                      <i class="fa-solid fa-angle-left"></i>
+                    </div>
                   </div>
                 </div>
                 <div class="sidebar__footer">
@@ -253,963 +266,844 @@
                   </div>
                 </div>
               </div>
-            </div> -->
-            <div class="col-lg-3 col-md-1 col-2 sidebar-shadow">
-              <div class="sidebar">
-                <div class="sidebar-item">
-                  <div class="sidebar__item--hr">
-                    <div class="sidebar__header">
-                      <div class="text-sidebar">
-                        <i onclick="toggle()" class="fa-solid fa-sliders"></i>
-                        <span class="filtes">Filtes</span>
-                      </div>
-                      <div class="filtess">
-                        <i class="fa-solid fa-angle-left"></i>
-                      </div>
-                    </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-11 col-sm-11 col-10 sidebar-2">
+            <div class="main">
+              <div class="trending">
+                <div class="trending__right">
+                  <div class="title">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Trending:</span>
                   </div>
-                  <div class="sidebar__footer">
-                    <div class="categories">
-                      <ul>
-                        <li class="title"><span>Refine by</span></li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li class="title"><span>Refine by</span></li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                        <li>
-                          <div class="cate">
-                            <input type="checkbox" />
-                            <label> Default checkbox </label>
-                          </div>
-                          <div class="result"><span>270</span></div>
-                        </li>
-                      </ul>
+                  <ul>
+                    <li class="trending__item">
+                      <img src="./Assets/trending2.jpg" alt="" />
+                      <span>portfolio</span>
+                    </li>
+                  </ul>
+                  <div class="title">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Poppular:</span>
+                  </div>
+                  <ul>
+                    <li class="trending__item">
+                      <img src="./Assets/trending2.jpg" alt="" />
+                      <span>ecommerce</span>
+                    </li>
+                    <li class="trending__item">
+                      <img src="./Assets/trending3.jpg" alt="" />
+                      <span>portfolio</span>
+                    </li>
+                    <li class="trending__item">
+                      <img src="./Assets/trending4.jpg" alt="" />
+                      <span>react</span>
+                    </li>
+                    <li class="trending__item">
+                      <img src="./Assets/trending5.jpg" alt="" />
+                      <span>agenry</span>
+                    </li>
+                    <li class="trending__item">
+                      <img src="./Assets/trending6.jpg" alt="" />
+                      <span>bootstrap</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="searchPoppular">
+                <div class="row">
+                  <div class="col-lg-12 d-flex">
+                    <div class="sort">
+                      <select class="input-group-text" name="" id="">
+                        <option id="option" value="">Sort by Popular</option>
+                        <option id="option" value="">New</option>
+                      </select>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-9 col-md-11 col-10 sidebar-2">
-              <div class="main">
-                <div class="trending">
-                  <div class="trending__right">
-                    <div class="title">
-                      <i class="fa-solid fa-heart"></i>
-                      <span>Trending:</span>
-                    </div>
-                    <ul>
-                      <li class="trending__item">
-                        <img src="./Assets/trending2.jpg" alt="" />
-                        <span>portfolio</span>
-                      </li>
-                    </ul>
-                    <div class="title">
-                      <i class="fa-solid fa-heart"></i>
-                      <span>Poppular:</span>
-                    </div>
-                    <ul>
-                      <li class="trending__item">
-                        <img src="./Assets/trending2.jpg" alt="" />
-                        <span>ecommerce</span>
-                      </li>
-                      <li class="trending__item">
-                        <img src="./Assets/trending3.jpg" alt="" />
-                        <span>portfolio</span>
-                      </li>
-                      <li class="trending__item">
-                        <img src="./Assets/trending4.jpg" alt="" />
-                        <span>react</span>
-                      </li>
-                      <li class="trending__item">
-                        <img src="./Assets/trending5.jpg" alt="" />
-                        <span>agenry</span>
-                      </li>
-                      <li class="trending__item">
-                        <img src="./Assets/trending6.jpg" alt="" />
-                        <span>bootstrap</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="searchPoppular">
-                  <div class="row">
-                    <div class="col-lg-12 d-flex">
-                      <div class="sort">
-                        <select class="input-group-text" name="" id="">
-                          <option value="">Sort by Popular</option>
-                          <option value="">New</option>
-                        </select>
-                      </div>
+              <div class="product">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
+                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
+                          </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                </div>
-                <div class="product">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="border-content">
+                      <a href="#">
+                        <div class="boxImg">
+                          <div class="img-product"></div>
+                        </div>
+                        <div class="content_item">
+                          <div class="content_1">
+                            <div class="text-title">
+                              <span class="spacing"
+                                >Seppo - Corporate One Page HTML Template</span
+                              >
                             </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
+                            by
+                            <a class="titlel" href="#">CocoBasic</a>
                           </div>
-                        </a>
-                      </div>
+                          <div class="content_2">
+                            <a href="#"
+                              ><img src="./Assets/icon+.svg" alt=""
+                            /></a>
+                            <a href="#"
+                              ><img src="./Assets/icondowload.svg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 pb-4">
-                      <div class="border-content">
-                        <a href="#">
-                          <div class="boxImg">
-                            <div class="img-product"></div>
-                          </div>
-                          <div class="content_item">
-                            <div class="content_1">
-                              <div class="text-title">
-                                <span class="spacing"
-                                  >Seppo - Corporate One Page HTML
-                                  Template</span
-                                >
-                              </div>
-                              by
-                              <a class="titlel" href="#">CocoBasic</a>
-                            </div>
-                            <div class="content_2">
-                              <a href="#"
-                                ><img src="./Assets/icon+.svg" alt=""
-                              /></a>
-                              <a href="#"
-                                ><img src="./Assets/icondowload.svg" alt=""
-                              /></a>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-center">
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">1</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
+                  </div>
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link page-active" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- end -->
-      <footer>
-        <div class="footer-item">
-          <div class="container">
-            <div class="footer-1">
-              <div class="row">
-                <div class="col-lg-3 col-md-4 col-12">
-                  <span class="title">ENVATO ELEMENTS</span>
-                  <ul>
-                    <li><a href="#">About Elements</a></li>
-                    <li><a href="">Monthly Free Files</a></li>
-                    <li><a href="#">License</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12">
-                  <span class="title">MEET ENVATO </span>
-                  <ul>
-                    <li><a href="#">About Elements</a></li>
-                    <li><a href="">Explore our ecosystem</a></li>
-                    <li><a href="#">Careers</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 col-12">
-                  <span class="title">HELP</span>
-                  <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="">Become an Affiliate</a></li>
-                  </ul>
-                  <span class="title">AUTHOR</span>
-                  <ul>
-                    <li><a href="#">Become an Author</a></li>
-                    <li><a href="">Author Sign In</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-4 col-12">
-                  <div class="footer-search">
-                    <span
-                      >Send me tips, trends, freebies, updates & offers.
-                    </span>
-                    <div class="input-group w-75">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Email addres "
-                      />
-                      <div class="input-group-append">
-                        <button class="input-group-text">Sign in me</button>
-                      </div>
-                    </div>
-                    <a href="">Privacy Policy</a>
+          <div class="sidebar-tab">
+            <div class="sidebar-item">
+              <div class="sidebar__item--hr">
+                <div class="sidebar__header">
+                  <div class="text-sidebar">
+                    <i
+                      onclick="sidebar()"
+                      class="fa-solid fa-sliders btn-tab"
+                    ></i>
+                    <span>Filtes</span>
                   </div>
+                  <i class="fa-solid fa-angle-left"></i>
                 </div>
               </div>
-            </div>
-            <div class="footer-2">
-              <div class="row">
-                <div class="col-lg-6 col-12">
-                  <ul class="mb-2 link-footer">
-                    <li><a href="">Envato Market</a></li>
-                    <li><a href="">Envato Tuts+</a></li>
-                    <li><a href="">Placeit</a></li>
-                    <li><a href="">Mixkit</a></li>
-                    <li><a href="">All Products</a></li>
-                    <li><a href="">Sitemap</a></li>
+              <div class="sidebar__footer">
+                <div class="categories">
+                  <ul>
+                    <li class="title"><span>Refine by</span></li>
+                    <li>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
+                    </li>
+                    <li>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
+                    </li>
+                    <li>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
+                    </li>
+                    <li>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
+                    </li>
                   </ul>
-                  <div class="copyright">
-                    <span
-                      >© 2023 Envato Elements Pty Ltd. Trademarks and brands are
-                      the property of their respective owners.</span
-                    >
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="icon-footer">
+                  <ul>
+                    <li class="title"><span>Refine by</span></li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <div class="cate">
+                        <input type="checkbox" />
+                        <label> Default checkbox </label>
+                      </div>
+                      <div class="result"><span>270</span></div>
                     </li>
                   </ul>
                 </div>
@@ -1217,27 +1111,120 @@
             </div>
           </div>
         </div>
-      </footer>
-
-      <!-- nav mobile -->
-      <div class="nav__mobile">
-        <nav>
-          <a href="">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span></a
-          >
-          <a href=""
-            ><i class="fa-solid fa-house"></i> <span>Categories</span></a
-          >
-          <a href=""
-            ><i class="fa-sharp fa-solid fa-bookmark"></i>
-            <span>My Collections</span></a
-          >
-          <a href=""
-            ><i class="fa-solid fa-circle-user"></i> <span>Sign In</span></a
-          >
-        </nav>
       </div>
+    </section>
+    <!-- end -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-item">
+        <div class="container">
+          <div class="footer-1">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-12">
+                <span class="title">ENVATO ELEMENTS</span>
+                <ul>
+                  <li><a href="#">About Elements</a></li>
+                  <li><a href="">Monthly Free Files</a></li>
+                  <li><a href="#">License</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-4 col-12">
+                <span class="title">MEET ENVATO </span>
+                <ul>
+                  <li><a href="#">About Elements</a></li>
+                  <li><a href="">Explore our ecosystem</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-4 col-12">
+                <span class="title">HELP</span>
+                <ul>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="">Become an Affiliate</a></li>
+                </ul>
+                <span class="title">AUTHOR</span>
+                <ul>
+                  <li><a href="#">Become an Author</a></li>
+                  <li><a href="">Author Sign In</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="footer-search">
+                  <span
+                    >Send me tips, trends, freebies, updates & offers.
+                  </span>
+                  <div class="input-group w-75">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email addres "
+                    />
+                    <div class="input-group-append">
+                      <button class="input-group-text">Sign in me</button>
+                    </div>
+                  </div>
+                  <a href="">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-2">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <ul class="mb-2 link-footer">
+                  <li><a href="">Envato Market</a></li>
+                  <li><a href="">Envato Tuts+</a></li>
+                  <li><a href="">Placeit</a></li>
+                  <li><a href="">Mixkit</a></li>
+                  <li><a href="">All Products</a></li>
+                  <li><a href="">Sitemap</a></li>
+                </ul>
+                <div class="copyright">
+                  <span
+                    >© 2023 Envato Elements Pty Ltd. Trademarks and brands are
+                    the property of their respective owners.</span
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <ul class="icon-footer">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end -->
+    <!-- nav mobile -->
+    <div class="nav__mobile">
+      <nav>
+        <a href="">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span></a
+        >
+        <a href=""><i class="fa-solid fa-house"></i> <span>Categories</span></a>
+        <a href=""
+          ><i class="fa-sharp fa-solid fa-bookmark"></i>
+          <span>My Collections</span></a
+        >
+        <a href=""
+          ><i class="fa-solid fa-circle-user"></i> <span>Sign In</span></a
+        >
+      </nav>
     </div>
     <!--css -->
     <link

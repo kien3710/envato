@@ -2,7 +2,6 @@
   --main-color: #404040;
 }
 /* CSS RESET */
-
 *,
 *::before,
 *::after {
@@ -13,13 +12,7 @@
   padding: 0;
   font: inherit;
 }
-.title-section {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  color: var(--green-dark);
-  margin: 20px 0;
-}
+
 label {
   margin: 0;
 }
@@ -73,12 +66,6 @@ a:hover {
     width: 1370px;
   }
 }
-
-/* test */
-
-.wrapper {
-  display: flex;
-}
 /* nav mobile */
 .background__mobile {
   background-color: rgba(0, 0, 0, 0.75);
@@ -92,7 +79,6 @@ a:hover {
   z-index: 10000000;
   display: none;
 }
-
 .menu__mobile {
   background-color: #fff;
   bottom: 0;
@@ -136,6 +122,10 @@ a:hover {
 .menu__mobile .menu__header i {
   font-size: 20px;
 }
+.header_mobile .menu__body {
+  height: calc(100% - 0px);
+  overflow-y: auto;
+}
 .menu__mobile .menu__body .btn:first-child {
   display: flex;
   flex-direction: column;
@@ -157,11 +147,7 @@ a:hover {
   color: #505050;
 }
 .menu__mobile .menu__body .link__nav li {
-  /* border-color: #ececee;
-  border-style: solid none;
-  border-width: 1px; */
   padding: 10px 20px;
-
   border-bottom: 1px solid #ececee;
 }
 .menu__mobile .menu__body .link__nav li:first-child {
@@ -204,9 +190,7 @@ a:hover {
 .menu__mobile .menu__body .socials .icon-footer li:hover {
   opacity: 0.7;
 }
-
 /* header */
-
 header {
   box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
   color: #484848;
@@ -219,7 +203,6 @@ header {
   height: 100px;
   background-color: #fff;
 }
-
 header .header_section {
   width: 100%;
   display: flex;
@@ -244,18 +227,21 @@ header .header_section .bar {
   display: none;
   width: 100%;
   font-size: 22px;
+  align-items: center;
 }
 header .header_section .bar i {
   margin-right: 10px;
 }
 
 header .search form select {
+  text-align: start;
   background-color: #f9f9fb;
 }
 header .search form select {
   color: var(--main-color);
   border-radius: 7px 0px 0px 7px !important;
 }
+
 header .search form input {
   padding: 0 70px;
   outline: none;
@@ -334,7 +320,6 @@ header .header_menu .submenu li {
   background-color: #fafafa;
   margin-top: 100px;
 }
-
 .content .sidebar {
   position: -webkit-sticky;
   position: sticky;
@@ -343,14 +328,12 @@ header .header_menu .submenu li {
 .sidebar-shadow {
   box-shadow: 8px 0 8px -8px rgb(0 0 0 / 10%);
 }
-
 .search-active {
   display: none;
 }
 .search-table {
   display: none;
 }
-
 .search-tab-active {
   display: block;
 }
@@ -378,6 +361,7 @@ header .header_menu .submenu li {
   justify-content: space-between;
   padding: 10px 0;
   align-items: center;
+  margin-left: 20px;
 }
 .content .sidebar .sidebar__item--hr {
   position: relative;
@@ -480,7 +464,6 @@ header .header_menu .submenu li {
   color: #505050;
   width: auto;
 }
-
 /* right */
 .content .main .trending .trending__right {
   display: flex;
@@ -556,9 +539,10 @@ header .header_menu .submenu li {
   font-size: 12px;
   padding: 10px 150px 10px 10px;
 }
-
+#option {
+  text-align: start;
+}
 .content .main .product .boxImg {
-  /* border-radius: 10px; */
   overflow: hidden;
 }
 .content .main .product .boxImg .img-product {
@@ -568,7 +552,9 @@ header .header_menu .submenu li {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.content .product {
+  padding-bottom: 50px;
+}
 .content .product .content_item {
   display: flex;
   align-items: center;
@@ -617,7 +603,6 @@ header .header_menu .submenu li {
   transform: translateY(-5px);
   transition: 0.3s;
 }
-
 /* footer */
 footer {
   background-color: #282828;
@@ -640,7 +625,6 @@ footer .footer-1 ul li a {
 footer .footer-1 ul li:hover {
   text-decoration: underline;
 }
-
 footer .footer-1 input {
   padding: 7px 40px 7px 10px;
   border-radius: 7px;
@@ -718,7 +702,7 @@ footer .footer-2 .icon-footer li a i {
 footer .footer-2 .icon-footer li:hover {
   opacity: 0.7;
 }
-/* nav mobile */
+/* nav mobile , navigation , search mobile */
 .nav__mobile {
   display: none;
 }
@@ -854,4 +838,18 @@ footer .footer-2 .icon-footer li:hover {
 }
 .display-none {
   display: none;
+}
+
+.content .sidebar .sidebar__header .text-sidebar .sidebar-sliders {
+  display: none;
+}
+.page-active {
+  background-color: #523ee8 !important;
+  color: #fff !important;
+}
+.pagination li a {
+  color: #303030;
+  font-weight: 700;
+  background: transparent;
+  border: none;
 }
