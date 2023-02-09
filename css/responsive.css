@@ -87,7 +87,6 @@
   }
 }
 /* moble & tablet */
-
 @media (min-width: 576px) and (max-width: 767.98px) {
   header {
     height: 60px;
@@ -160,7 +159,6 @@
   }
 }
 /* mobile */
-
 @media screen and (max-width: 575px) {
   header {
     height: 60px;

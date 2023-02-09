@@ -295,7 +295,7 @@ header .header_menu .submenu {
   font-weight: 600;
   font-size: 12px;
 }
-header .header_menu li:hover::after {
+header .header_menu > li:hover::after {
   background-color: #523ee8;
   bottom: 0;
   content: "";
@@ -313,6 +313,11 @@ header .header_menu li:hover .submenu {
 }
 header .header_menu .submenu li {
   margin-bottom: 10px;
+  padding: 5px 10px;
+}
+header .header_menu .submenu li:hover {
+  background-color: #ececee;
+  border-radius: 5px;
 }
 /* Content */
 .content {
